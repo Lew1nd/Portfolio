@@ -11,5 +11,5 @@ import { Background } from './components/background/background';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('Lewind Dev');
+  protected readonly title = signal('Lewind Dev - Portfolio');
 }
