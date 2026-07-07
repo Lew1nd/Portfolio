@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+/* IMPORTACIONES */
+@import url('./styles/variables.css');
+@import url('./styles/base.css');
+@import url('./styles/typography.css');
+@import url('./styles/layout.css');
+@import url('./styles/buttons.css');
+@import url('./styles/cards.css');
+@import url('./styles/animations.css');
+@import url('./styles/scrollbar.css');
+@import url('./styles/synthwave.css');
+@import "bootstrap-icons/font/bootstrap-icons.css";
+/* IMPORTACIONES */

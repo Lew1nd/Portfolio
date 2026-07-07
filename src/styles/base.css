@@ -1,0 +1,29 @@
+/* Base, estilos generales */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:
+    linear-gradient(
+        to bottom,
+        var(--bg-700),
+        var(--bg-900)
+    );
+
+    color:var(--text);
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+}

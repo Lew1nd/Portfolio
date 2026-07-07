@@ -1,0 +1,51 @@
+/* Reutilizables */
+
+:root{
+
+    /*========== Colores ==========*/
+
+    --bg-900:#090012;
+    --bg-800:#120028;
+    --bg-700:#1c0840;
+
+    --primary:#8A2EFF;
+    --secondary:#FF2FD8;
+    --accent:#00D9FF;
+
+    --success:#00D27A;
+    --danger:#FF4C67;
+    --warning:#FFC857;
+
+    --text:#F5F5FF;
+    --text-muted:#B6B4CF;
+
+    /*========== Bordes ==========*/
+
+    --radius-sm:8px;
+    --radius-md:14px;
+    --radius-lg:22px;
+
+    /*========== Sombras ==========*/
+
+    --shadow-sm:
+    0 0 8px rgba(255,47,216,.20);
+
+    --shadow-md:
+    0 0 18px rgba(255,47,216,.28);
+
+    --shadow-lg:
+    0 0 35px rgba(255,47,216,.40);
+
+    /*========== Transiciones ==========*/
+
+    --transition-fast:.2s;
+
+    --transition:.35s;
+
+    /*========== Glass ==========*/
+
+    --glass:
+
+    rgba(255,255,255,.05);
+
+}

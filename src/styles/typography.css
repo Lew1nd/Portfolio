@@ -1,0 +1,66 @@
+h1,
+h2,
+h3,
+h4 {
+
+    font-family: "Orbitron", sans-serif;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: var(--text);
+
+}
+
+p,
+span,
+a {
+
+    font-family: "Inter", sans-serif;
+
+    color: var(--text-muted);
+
+    line-height: 1.7;
+
+}
+
+/*LETRAS*/
+
+.synth-text {
+
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 6rem;
+    font-weight: 900;
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+
+    color: rgba(255, 0, 180, 0.08);
+
+    text-shadow:
+        0 0 10px rgba(255, 0, 180, .3),
+        0 0 25px rgba(255, 0, 180, .2);
+
+    user-select: none;
+    pointer-events: none;
+
+    background:
+        repeating-linear-gradient(transparent 0px,
+            transparent 2px,
+            rgba(255, 255, 255, .05) 3px,
+            transparent 4px);
+}
+
+.neon {
+    color: #ff55ff;
+
+    text-shadow:
+        0 0 5px #ff55ff,
+        0 0 5px #ff55ff,
+        0 0 15px #ff55ff,
+        0 0 40px #8a2be2;
+}
