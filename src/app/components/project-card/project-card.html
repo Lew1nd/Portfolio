@@ -1,17 +1,19 @@
 <div class="project-card">
 
-    <img src="assets/images/project.png" alt="Project Horizon">
+    <img [src]="project.image" [alt]="project.name">
 
     <div class="project-info">
 
-        <h2>Project Horizon</h2>
+        <h2>{{ project.name }}</h2>
 
         <span class="project-type">
-            Game Development
+            {{ project.type }}
         </span>
 
-        <span class="project-status finished">
-            Finalizado
+        <span class="project-status" [class]="project.status">
+
+            {{ project.status }}
+
         </span>
 
     </div>

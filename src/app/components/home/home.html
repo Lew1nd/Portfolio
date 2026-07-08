@@ -31,9 +31,11 @@
     <h1 class="project-area neon">Proyectos</h1>
 
     <div class="projects-grid">
+
         @for (project of projects; track project.id) {
-        <app-project-card></app-project-card>
+        <app-project-card [project]="project"></app-project-card>
         }
+
     </div>
 
 </div>

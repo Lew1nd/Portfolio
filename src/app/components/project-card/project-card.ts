@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Project } from '../../models/project-model';
 
 @Component({
@@ -8,4 +8,9 @@ import { Project } from '../../models/project-model';
   styleUrl: './project-card.css',
 })
 export class ProjectCard {
+
+  @Input({ required: true })
+  project!: Project;
+
+
 }

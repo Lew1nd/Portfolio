@@ -3,6 +3,6 @@ export interface Project{
     name:string;
     type:string;
     image:string;
-    status:"finished" | "in-progress" | "paused" | "archived";
+    status:"Finished" | "In-progress" | "Paused" | "Archived";
     route:string;
 }

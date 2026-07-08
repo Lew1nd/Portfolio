@@ -9,14 +9,14 @@ import { Project } from '../../models/project-model';
   styleUrl: './home.css',
 })
 export class Home {
-projects: Project[] = [
-  {
-    id: 1,
-    name: 'Portfolio',
-    type: 'Personal',
-    image: 'assets/images/Portfolio.png',
-    status: 'finished',
-    route: 'portfolio',
-  },
-];
+  projects: Project[] = [
+    {
+      id: 1,
+      name: 'Portfolio',
+      type: 'Personal',
+      image: 'assets/images/Portfolio.png',
+      status: 'Finished',
+      route: 'portfolio',
+    },
+  ];
 }
