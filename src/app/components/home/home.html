@@ -1,5 +1,8 @@
-<h1 class="synth-text neon">Lewind</h1>
-<h3 class="subtitle">Game dev - Fullstack web dev</h3>
+<div>
+    <h1 class="synth-text neon">Lewind</h1>
+    <h3 class="subtitle">Game dev - Fullstack web dev</h3>
+
+</div>
 
 <div>
     <h4 class="description">
@@ -9,7 +12,7 @@
         personales que me permiten experimentar con nuevas tecnologías, perfeccionar mis habilidades y convertir ideas
         en aplicaciones y videojuegos completos.
     </h4>
-    
+
     <div class="btn-area">
         <a href="https://github.com/Lew1nd" target="_blank" rel="noopener noreferrer" class="social-btn"
             aria-label="GitHub">
@@ -22,11 +25,15 @@
         </a>
 
     </div>
+</div>
 
+<div>
+    <h1 class="project-area neon">Proyectos</h1>
 
-
-
-
-
+    <div class="projects-grid">
+        @for (project of projects; track project.id) {
+        <app-project-card></app-project-card>
+        }
+    </div>
 
 </div>

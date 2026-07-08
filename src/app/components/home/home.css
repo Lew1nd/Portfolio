@@ -65,3 +65,31 @@
     backdrop-filter: blur(8px);
     background: rgba(20, 0, 40, .35);
 }
+
+
+/* PROJECT */
+.project-area{
+
+    margin-top: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+/* Contenedor */
+.projects-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:2rem;
+
+    margin-top:4rem;
+    margin-bottom:4rem;
+}
