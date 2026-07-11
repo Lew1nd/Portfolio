@@ -1,8 +1,8 @@
 export interface ProjectCard{
     id:number;
     name:string;
-    type:string;
+    type: "personal" | "profesional" | "academic" | "freelance";
     image:string;
-    status:"Finished" | "In-progress" | "Paused" | "Archived";
+    status: "finished" | "in-progress" | "paused" | "archived";
     slug:string;
 }

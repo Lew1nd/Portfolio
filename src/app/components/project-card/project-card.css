@@ -59,28 +59,28 @@
 }
 
 /* Estados */
-.Finished{
+.finished{
 
     background:#00ff8855;
 
     color:#00ff88;
 }
 
-.In-progress{
+.in-progress{
 
     background:#00c8ff55;
 
     color:#00d9ff;
 }
 
-.Paused{
+.paused{
 
     background:#ffb30055;
 
     color:#ffc107;
 }
 
-.Archived{
+.archived{
 
     background:#88888855;
 

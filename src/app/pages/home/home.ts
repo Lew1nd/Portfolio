@@ -10,13 +10,14 @@ import { ProjectCard as Project } from '../../models/project-card-model';
 })
 export class Home {
   //status: "Finished" | "In-progress" | "Paused" | "Archived"
+  //type: "Personal" | "Profesional" | "Academic" | "Freelance";
   projects: Project[] = [
     {
       id: 1,
       name: 'Planet Breaker',
-      type: 'Personal',
+      type: 'personal',
       image: 'images/projects/planet-breaker/logo.png',
-      status: 'In-progress',
+      status: 'in-progress',
       slug: 'planet-breaker',
     },
   ];

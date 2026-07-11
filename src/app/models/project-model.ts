@@ -5,8 +5,8 @@ export interface Project {
 
     // Información principal
     name: string;
-    type: string;
-    status: "Finished" | "In-progress" | "Paused" | "Archived";
+    type: "personal" | "profesional" | "academic" | "freelance";
+    status: "finished" | "in-progress" | "paused" | "archived";
 
     // Presentación
     banner: string;

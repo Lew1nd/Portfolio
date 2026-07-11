@@ -1,4 +1,4 @@
-<div class="project-card">
+<div class="project-card" [routerLink]="['/projects', project.slug]">
 
     <img [src]="project.image" [alt]="project.name">
 
@@ -13,6 +13,8 @@
         <span class="project-status" [class]="project.status">
             {{ project.status }}
         </span>
+
+        
 
     </div>
 
