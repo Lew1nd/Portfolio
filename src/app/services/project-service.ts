@@ -1,17 +1,32 @@
 import { Injectable } from '@angular/core';
-import { ProjectCard } from '../models/project-card-model';
 import { Project } from '../models/project-model';
+import { ProjectCard } from '../models/project-card-model';
+import { PROJECTS } from '../models/projects';
+import { CARDS } from '../models/project-cards';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ProjectService {
-  projectsCards: ProjectCard[] = [];
-  projects: Project[] = [];
+  PROJECTS: Project[] = PROJECTS;
+  PROJECTCARDS: ProjectCard[] = CARDS;
 
-  getBySlug(slug: string | any): ProjectCard | undefined {
+  // ------------------ Carta de proyecto ----------------------
+  getAllCards() {
+    return CARDS;
+  }
 
-    return this.projectsCards.find(p => p.slug === slug);
+  // ------------------ Carta de proyecto ----------------------
+  // ---------------- Proyecto ----------------------
+  getAllProjects() {
+    return PROJECTS;
+  }
+
+  getBySlug(slug: string | any): Project | undefined {
+
+    return this.PROJECTS.find(p => p.slug === slug);
 
   }
+
+  // ---------------- Proyecto ----------------------
 }

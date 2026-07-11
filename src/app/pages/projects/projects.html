@@ -1,1 +1,210 @@
-<p>projects works!</p>
+@if (project) {
+
+<div class="project-page">
+
+    <!-- Hero -->
+    <section class="project-header">
+
+        <h1 class="project-title">
+            {{ project.name }}
+        </h1>
+
+        <div class="project-meta">
+
+            <span class="chip">
+                🗂️ {{ project.type }}
+            </span>
+
+            <span class="chip">
+                🚧 {{ project.status }}
+            </span>
+
+            @if (project.startDate) {
+            <span class="chip">
+                📅 {{ project.startDate }}
+            </span>
+            }
+
+            @if (project.endDate) {
+            <span class="chip">
+                📅 {{ project.endDate }}
+            </span>
+            }
+
+        </div>
+
+        <img
+            class="project-banner"
+            [src]="project.banner"
+            [alt]="project.name">
+
+    </section>
+
+    <!-- Descripción -->
+    <section>
+
+        <h2>Descripción</h2>
+
+        <p class="project-description">
+            {{ project.description }}
+        </p>
+
+    </section>
+
+    <!-- Tecnologías -->
+    <section>
+
+        <h2>Tecnologías</h2>
+
+        <div class="tech-grid">
+
+            @for (tech of project.technologies; track tech) {
+
+                <span class="tech">
+                    {{ tech }}
+                </span>
+
+            }
+
+        </div>
+
+    </section>
+
+    <!-- Características -->
+    <section>
+
+        <h2>Características</h2>
+
+        <div class="feature-list">
+
+            @for (feature of project.features; track feature) {
+
+                <div class="feature">
+                    {{ feature }}
+                </div>
+
+            }
+
+        </div>
+
+    </section>
+
+    <!-- Galería -->
+    @if (project.captures.length > 0) {
+
+    <section>
+
+        <h2>Galería</h2>
+
+        <div class="gallery">
+
+            @for (capture of project.captures; track capture) {
+
+                <img
+                    [src]="capture"
+                    [alt]="project.name">
+
+            }
+
+        </div>
+
+    </section>
+
+    }
+
+    <!-- Video -->
+    @if (project.video) {
+
+    <section>
+
+        <h2>Video</h2>
+
+        <div class="project-video">
+
+            <video controls>
+
+                <source
+                    [src]="project.video"
+                    type="video/mp4">
+
+            </video>
+
+        </div>
+
+    </section>
+
+    }
+
+    <!-- GIF -->
+    @if (project.gif) {
+
+    <section>
+
+        <h2>Demostración</h2>
+
+        <img
+            class="project-banner"
+            [src]="project.gif"
+            [alt]="project.name + ' GIF'">
+
+    </section>
+
+    }
+
+    <!-- Aprendizajes -->
+    <section>
+
+        <h2>Lo que aprendí</h2>
+
+        <div class="learnings">
+
+            {{ project.learnings }}
+
+        </div>
+
+    </section>
+
+    <!-- Enlaces -->
+    @if (project.github || project.demo) {
+
+    <section>
+
+        <h2>Enlaces</h2>
+
+        <div class="links">
+
+            @if (project.github) {
+
+                <a
+                    class="project-button"
+                    [href]="project.github"
+                    target="_blank">
+
+                    GitHub
+
+                </a>
+
+            }
+
+            @if (project.demo) {
+
+                <a
+                    class="project-button"
+                    [href]="project.demo"
+                    target="_blank">
+
+                    Demo
+
+                </a>
+
+            }
+
+        </div>
+
+    </section>
+
+    }
+
+</div>
+
+}

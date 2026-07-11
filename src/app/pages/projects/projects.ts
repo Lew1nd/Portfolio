@@ -1,6 +1,7 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { ProjectService } from '../../services/project-service';
 import { Project } from '../../models/project-model';
+import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -11,7 +12,24 @@ import { Project } from '../../models/project-model';
 })
 export class Projects {
 
+  project?: Project;
 
-  
+  constructor(
+    private route: ActivatedRoute,
+    private projectService: ProjectService
+  ) {
+
+    this.route.paramMap.subscribe(params => {
+
+      const slug = params.get('slug');
+
+      if (!slug) return;
+
+      this.project = this.projectService.getBySlug(slug);
+
+    });
+
+  }
+
 
 }

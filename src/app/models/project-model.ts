@@ -27,7 +27,7 @@ export interface Project {
 
     // Contenido
     features: string[];
-    learnings: string;
+    learnings: string[];
 
     // Fechas
     startDate?: Date;

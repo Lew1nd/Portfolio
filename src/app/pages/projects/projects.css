@@ -1,0 +1,243 @@
+.project-page {
+
+    width: min(1200px, 92%);
+    margin: 2.5rem auto;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.project-banner {
+    display: block;
+
+    max-width: 1000px;
+    width: 70%;
+    height: auto;
+
+    margin: 0 auto;
+    border-radius: 20px;
+
+    border: 1px solid rgba(255,0,170,.25);
+
+    box-shadow:
+        0 0 30px rgba(255,0,170,.15);
+}
+
+.project-header {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 0.5rem;
+}
+
+.project-title {
+
+    font-family: "Orbitron";
+
+    text-align: center;
+
+    font-size: clamp(2.5rem,5vw,4rem);
+
+    margin: 0;
+
+    color: white;
+
+    text-shadow:
+        0 0 10px #ff00aa;
+}
+
+.project-meta {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 1rem;
+}
+
+.chip {
+
+    padding: .5rem 1rem;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.05);
+
+    border: 1px solid rgba(255,0,170,.25);
+
+    backdrop-filter: blur(8px);
+}
+
+.project-description {
+
+    line-height: 1.8;
+
+    font-size: 1.05rem;
+
+    text-align: justify;
+
+    color: #d6d6d6;
+}
+
+.tech-grid {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: .75rem;
+}
+
+.tech {
+
+    padding: .6rem 1rem;
+
+    border-radius: 50px;
+
+    background: rgba(0,234,255,.08);
+
+    border: 1px solid rgba(0,234,255,.25);
+
+    transition: .25s;
+}
+
+.tech:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 15px rgba(0,234,255,.3);
+}
+
+.feature-list {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+.feature {
+
+    padding: 1rem;
+
+    border-left: 4px solid #ff00aa;
+
+    background: rgba(255,255,255,.03);
+
+    border-radius: 8px;
+}
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(300px,1fr));
+
+    gap: 1.5rem;
+}
+
+.gallery img {
+
+    width: 100%;
+
+    border-radius: 16px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.gallery img:hover {
+
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 25px rgba(255,0,170,.25);
+}
+
+.project-video {
+
+    width: 100%;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.project-video video {
+
+    width: 100%;
+}
+
+.learnings {
+
+    padding: 2rem;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,.04);
+
+    border: 1px solid rgba(255,0,170,.2);
+
+    line-height: 1.8;
+}
+
+.links {
+
+    display: flex;
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+}
+
+.project-button {
+
+    padding: .9rem 1.5rem;
+
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    color: white;
+
+    background: rgba(255,0,170,.08);
+
+    border: 1px solid rgba(255,0,170,.4);
+
+    transition: .25s;
+}
+
+.project-button:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 0 20px rgba(255,0,170,.35);
+}
+
+@media (max-width:768px){
+
+    .project-page{
+
+        width:95%;
+    }
+
+    .project-banner{
+
+        height:220px;
+    }
+
+    .gallery{
+
+        grid-template-columns:1fr;
+    }
+
+}
