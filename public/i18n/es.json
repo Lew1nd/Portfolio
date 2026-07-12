@@ -1,0 +1,33 @@
+{
+    "home": {
+        "description": "Hola, soy Tomás, aunque probablemente me conozcas como Lewind. Soy desarrollador de videojuegos con Unity y desarrollador Full Stack, apasionado por crear software que combine creatividad, rendimiento y una arquitectura sólida. Actualmente estudio Programación en la UTN y dedico gran parte de mi tiempo a desarrollar proyectos personales que me permiten experimentar con nuevas tecnologías, perfeccionar mis habilidades y convertir ideas en aplicaciones y videojuegos completos.",
+        "projects": "Proyectos"
+    },
+    "header": {
+        "portfolio": "Portafolio",
+        "home": "Inicio",
+        "about": "Sobre mi",
+        "contact": "Contacto"
+    },
+    "projects": {
+        "planet-breaker": {
+            "name": "Planet Breaker",
+            "short-description": "Juego de plataforma 2D",
+            "description": "Juego de plataforma 2D desarrollado en Unity con C#.",
+            "features": [],
+            "learnings": []
+        },
+        "project-types": {
+            "personal": "Personal",
+            "profesional": "Profesional",
+            "academic": "Academico",
+            "freelance": "Freelance"
+        },
+        "project-status": {
+            "finished": "Finalizado",
+            "in-progress": "En progreso",
+            "archived": "Archivado",
+            "paused": "Pausado"
+        }
+    }
+}

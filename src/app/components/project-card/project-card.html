@@ -7,13 +7,15 @@
         <h2>{{ project.name }}</h2>
 
         <span class="project-type">
-            {{ project.type }}
+            {{ 'projects.project-types.' + project.type | translate }}
         </span>
 
         <span class="project-status" [class]="project.status">
-            {{ project.status }}
+
+            {{ ('projects.project-status.' + project.status) | translate }}
+
         </span>
-        
+
     </div>
 
 </div>

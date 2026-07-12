@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { ProjectService } from '../../services/project-service';
 import { Project } from '../../models/project-model';
 import { ActivatedRoute } from '@angular/router';
-
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './projects.html',
   styleUrl: './projects.css',
 })

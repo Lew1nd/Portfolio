@@ -1,17 +1,16 @@
 <header class="header">
     <div class="logo">
-        <span class="brand">Portfolio</span>
+        <span class="brand">{{'header.portfolio' | translate}}</span>
     </div>
 
     <nav class="nav">
-        <a routerLink="/">Inicio</a>
-        <a routerLink="/">Sobre mí</a>
-        <a routerLink="/">Proyectos</a>
-        <a routerLink="/">Contacto</a>
+        <a routerLink="/">{{'header.home' | translate}}</a>
+        <a routerLink="/">{{'header.about' | translate}}</a>
+        <a routerLink="/">{{'header.contact' | translate}}</a>
     </nav>
 
     <!--(change)="changeLanguage($event)"-->
-    <select class="language-select">
+    <select class="language-select" [(ngModel)]="language" (ngModelChange)="changeLanguage($event)">
         <option value="es">Español</option>
         <option value="en">English</option>
     </select>

@@ -1,0 +1,33 @@
+{
+    "home": {
+        "description": "Hi, I'm Tomás, though you probably know me as Lewind. I'm a Unity game developer and a full-stack developer, passionate about creating software that combines creativity, performance, and a solid architecture. I'm currently studying Programming at UTN and dedicate a lot of my time to developing personal projects that allow me to experiment with new technologies, hone my skills, and turn ideas into complete applications and video games.",
+        "projects": "Projects"
+    },
+    "header": {
+        "portfolio": "Portfolio",
+        "home": "Home",
+        "about": "About me",
+        "contact": "Contact"
+    },
+    "projects": {
+        "planet-breaker": {
+            "name": "Planet Breaker",
+            "short-description": "Juego de plataforma 2D",
+            "description": "Juego de plataforma 2D desarrollado en Unity con C#.",
+            "features": [],
+            "learnings": []
+        },
+        "project-types": {
+            "personal": "Personal",
+            "profesional": "Profesional",
+            "academic": "Academic",
+            "freelance": "Freelance"
+        },
+        "project-status": {
+            "finished": "Finished",
+            "in-progress": "In progress",
+            "archived": "Archived",
+            "paused": "Paused"
+        }
+    }
+}

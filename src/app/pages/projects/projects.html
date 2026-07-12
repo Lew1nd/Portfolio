@@ -33,10 +33,7 @@
 
         </div>
 
-        <img
-            class="project-banner"
-            [src]="project.banner"
-            [alt]="project.name">
+        <img class="project-banner" [src]="project.banner" [alt]="project.name">
 
     </section>
 
@@ -60,9 +57,9 @@
 
             @for (tech of project.technologies; track tech) {
 
-                <span class="tech">
-                    {{ tech }}
-                </span>
+            <span class="tech">
+                {{ tech }}
+            </span>
 
             }
 
@@ -77,11 +74,13 @@
 
         <div class="feature-list">
 
-            @for (feature of project.features; track feature) {
+            @for(feature of project.features; track feature){
 
-                <div class="feature">
-                    {{ feature }}
-                </div>
+            <div class="feature">
+
+                {{ feature | translate }}
+
+            </div>
 
             }
 
@@ -100,9 +99,7 @@
 
             @for (capture of project.captures; track capture) {
 
-                <img
-                    [src]="capture"
-                    [alt]="project.name">
+            <img [src]="capture" [alt]="project.name">
 
             }
 
@@ -123,9 +120,7 @@
 
             <video controls>
 
-                <source
-                    [src]="project.video"
-                    type="video/mp4">
+                <source [src]="project.video" type="video/mp4">
 
             </video>
 
@@ -142,10 +137,7 @@
 
         <h2>Demostración</h2>
 
-        <img
-            class="project-banner"
-            [src]="project.gif"
-            [alt]="project.name + ' GIF'">
+        <img class="project-banner" [src]="project.gif" [alt]="project.name + ' GIF'">
 
     </section>
 
@@ -156,11 +148,15 @@
 
         <h2>Lo que aprendí</h2>
 
+        @for(learning of project.learnings; track learning){
+
         <div class="learnings">
 
-            {{ project.learnings }}
+            {{ learning | translate }}
 
         </div>
+
+        }
 
     </section>
 
@@ -175,27 +171,21 @@
 
             @if (project.github) {
 
-                <a
-                    class="project-button"
-                    [href]="project.github"
-                    target="_blank">
+            <a class="project-button" [href]="project.github" target="_blank">
 
-                    GitHub
+                GitHub
 
-                </a>
+            </a>
 
             }
 
             @if (project.demo) {
 
-                <a
-                    class="project-button"
-                    [href]="project.demo"
-                    target="_blank">
+            <a class="project-button" [href]="project.demo" target="_blank">
 
-                    Demo
+                Demo
 
-                </a>
+            </a>
 
             }
 

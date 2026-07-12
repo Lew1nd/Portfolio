@@ -24,7 +24,7 @@ export const PROJECTS: Project[] = [
             
         ],
         learnings: [
-            
+
         ],
     },
 ];
