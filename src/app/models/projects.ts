@@ -28,12 +28,8 @@ export const PROJECTS: Project[] = [
         ],
         github: '',
         demo: 'https://lewind-dev.itch.io/planet-breaker-game',
-        features: [
-            "aaa"
-        ],
-        learnings: [
-
-        ],
+        features: [],
+        learnings: [],
     },
 ];
 

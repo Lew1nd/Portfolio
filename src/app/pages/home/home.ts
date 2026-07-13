@@ -11,7 +11,7 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './home.css',
 })
 export class Home {
-  projectService = inject(ProjectService);
+  private projectService = inject(ProjectService);
 
   projects: Project[] = this.projectService.getAllCards();
 }
