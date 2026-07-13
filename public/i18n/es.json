@@ -12,10 +12,30 @@
     "projects": {
         "planet-breaker": {
             "name": "Planet Breaker",
-            "short-description": "Juego de plataforma 2D",
-            "description": "Juego de plataforma 2D desarrollado en Unity con C#.",
-            "features": [],
-            "learnings": []
+            "short-description": "Arcade shooter - 2D - Sci-fi",
+            "description": "Juego arcade 2D inspirado en Asteroids. Controlaremos a un piloto de naves que será contratado por una corporación que tiene como objetivo destruir los planetas de La Federación: una corporación maligna que se apoderó de gran parte de los planetas. Para ello dispondremos de un gran arsenal de naves con habilidades y estilos de juego diferentes.",
+            "features": [
+                "Sistema procedural de planetas con generación dinámica.",
+                "Variedad de naves jugables con habilidades y estilos únicos.",
+                "Enemigos con IA y patrones de ataque variados.",
+                "Satélites, jefes y habilidades especiales según el planeta.",
+                "Sistema modular de mejoras y progresión permanente.",
+                "Dificultad escalable con múltiples niveles de desafío.",
+                "Bullet Hell con proyectiles y patrones complejos.",
+                "Gestión centralizada de audio mediante AudioMixer.",
+                "Efectos visuales, shaders personalizados y diseño estilo pixel art.",
+                "Arquitectura modular basada en componentes reutilizables."
+            ],
+            "learnings": [
+                "Implementación de un sistema de dificultad escalable.",
+                "Uso de ScriptableObjects, Factories y Singletons.",
+                "Implementación de Pooling para la generación de enemigos usando Addressables.",
+                "Reutilización de niveles: todos los planetas usan el mismo nivel, solo cambia su comportamiento.",
+                "Animaciones utilizando Spritesheets.",
+                "Desarrollo de un sistema de diálogo basado en eventos.",
+                "Uso de particle Systems.",
+                "Persistencia basada en JSON: cada nave tiene su propio archivo"
+            ]
         },
         "project-types": {
             "personal": "Personal",
@@ -28,6 +48,17 @@
             "in-progress": "En progreso",
             "archived": "Archivado",
             "paused": "Pausado"
+        },
+        "project-page": {
+            "description": "Descripción",
+            "technologies": "Tecnologías",
+            "info": "Características",
+            "gallery": "Galería",
+            "watch-video": "Ver video",
+            "video": "Video",
+            "demo": "Demostración",
+            "learning": "Lo que aprendí",
+            "links": "Enlaces"
         }
     }
 }

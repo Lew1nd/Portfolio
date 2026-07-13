@@ -11,17 +11,25 @@ export const PROJECTS: Project[] = [
         shortDescription: 'Juego de plataforma 2D',
         description: 'Juego de plataforma 2D desarrollado en Unity con C#.',
         captures: [
-            
+            'images/projects/planet-breaker/1.png',
+            'images/projects/planet-breaker/2.png',
+            'images/projects/planet-breaker/3.png',
+            'images/projects/planet-breaker/4.png',
+            'images/projects/planet-breaker/5.png',
+            'images/projects/planet-breaker/6.png',
+            'images/projects/planet-breaker/7.png',
+            'images/projects/planet-breaker/8.png',
         ],
+        video: 'https://www.youtube.com/watch?v=4I_TVR7iNH0',
         technologies: [
             'Unity',
             'C#',
             'Git'
         ],
         github: '',
-        demo: '',
+        demo: 'https://lewind-dev.itch.io/planet-breaker-game',
         features: [
-            
+            "aaa"
         ],
         learnings: [
 

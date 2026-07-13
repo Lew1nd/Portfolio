@@ -12,10 +12,30 @@
     "projects": {
         "planet-breaker": {
             "name": "Planet Breaker",
-            "short-description": "Juego de plataforma 2D",
-            "description": "Juego de plataforma 2D desarrollado en Unity con C#.",
-            "features": [],
-            "learnings": []
+            "short-description": "Arcade shooter - 2D - Sci-fi",
+            "description": "A 2D arcade game inspired by Asteroids. You control a spaceship pilot hired by a corporation tasked with destroying the planets of the Federation: an evil organization that has seized control of most of the world's planets. To accomplish this, you'll have access to a vast arsenal of ships, each with different abilities and playstyles.",
+            "features": [
+                "Procedural planet system with dynamic generation.",
+                "Variety of playable ships with unique abilities and styles.",
+                "Enemies with AI and varied attack patterns.",
+                "Satellites, bosses, and special abilities depending on the planet.",
+                "Modular upgrade system with permanent progression.",
+                "Scalable difficulty with multiple challenge levels.",
+                "Bullet Hell with complex projectiles and patterns.",
+                "Centralized audio management via AudioMixer.",
+                "Visual effects, custom shaders, and pixel art style design.",
+                "Modular architecture based on reusable components."
+            ],
+            "learnings": [
+                "Implementation of a scalable difficulty system.",
+                "Use of ScriptableObjects, Factories, and Singletons.",
+                "Implementation of pooling for enemy generation using Addressables.",
+                "Level reuse: all planets use the same level; only its behavior changes.",
+                "Animations using Spritesheets.",
+                "Development of an event-driven dialogue system.",
+                "Use of Particle Systems.",
+                "JSON-based persistence: each ship has its own file."
+            ]
         },
         "project-types": {
             "personal": "Personal",
@@ -28,6 +48,17 @@
             "in-progress": "In progress",
             "archived": "Archived",
             "paused": "Paused"
+        },
+        "project-page": {
+            "description": "Description",
+            "technologies": "Technologies",
+            "info": "Information",
+            "gallery": "Gallery",
+            "watch-video": "Watch video",
+            "video": "Video",
+            "demo": "Demo",
+            "learning": "What I learned",
+            "links": "Links"
         }
     }
 }

@@ -9,14 +9,16 @@
             {{ project.name }}
         </h1>
 
+        <h3 class="project-subtitle"> {{ 'projects.' + projectSlug + '.short-description' | translate }}</h3>
+
         <div class="project-meta">
 
             <span class="chip">
-                🗂️ {{ project.type }}
+                🗂️ {{ 'projects.project-types.' + project.type | translate }}
             </span>
 
             <span class="chip">
-                🚧 {{ project.status }}
+                🚧 {{ 'projects.project-status.' + project.status | translate }}
             </span>
 
             @if (project.startDate) {
@@ -40,10 +42,10 @@
     <!-- Descripción -->
     <section>
 
-        <h2>Descripción</h2>
+        <h2>{{ 'projects.project-page.description' | translate }}</h2>
 
         <p class="project-description">
-            {{ project.description }}
+            {{ 'projects.' + projectSlug + '.description' | translate }}
         </p>
 
     </section>
@@ -51,7 +53,7 @@
     <!-- Tecnologías -->
     <section>
 
-        <h2>Tecnologías</h2>
+        <h2>{{'projects.project-page.technologies' | translate}}</h2>
 
         <div class="tech-grid">
 
@@ -70,15 +72,15 @@
     <!-- Características -->
     <section>
 
-        <h2>Características</h2>
+        <h2>{{'projects.project-page.info' | translate}}</h2>
 
         <div class="feature-list">
 
-            @for(feature of project.features; track feature){
+            @for(feature of features; track feature){
 
             <div class="feature">
 
-                {{ feature | translate }}
+                {{ feature }}
 
             </div>
 
@@ -93,7 +95,7 @@
 
     <section>
 
-        <h2>Galería</h2>
+        <h2>{{'projects.project-page.gallery' | translate}}</h2>
 
         <div class="gallery">
 
@@ -114,15 +116,15 @@
 
     <section>
 
-        <h2>Video</h2>
+        <h2>{{ 'projects.project-page.video' | translate }}</h2>
 
-        <div class="project-video">
+        <div class="links">
 
-            <video controls>
+            <a class="project-button" [href]="project.video" target="_blank" rel="noopener noreferrer">
 
-                <source [src]="project.video" type="video/mp4">
+                🎥 {{ 'projects.project-page.watch-video' | translate }}
 
-            </video>
+            </a>
 
         </div>
 
@@ -135,7 +137,7 @@
 
     <section>
 
-        <h2>Demostración</h2>
+        <h2>{{'projects.project-page.demo' | translate}}</h2>
 
         <img class="project-banner" [src]="project.gif" [alt]="project.name + ' GIF'">
 
@@ -146,13 +148,13 @@
     <!-- Aprendizajes -->
     <section>
 
-        <h2>Lo que aprendí</h2>
+        <h2>{{'projects.project-page.learning' | translate}}</h2>
 
-        @for(learning of project.learnings; track learning){
+        @for(learning of learnings; track learning){
 
         <div class="learnings">
 
-            {{ learning | translate }}
+            {{ learning }}
 
         </div>
 
@@ -165,7 +167,7 @@
 
     <section>
 
-        <h2>Enlaces</h2>
+        <h2>{{'projects.project-page.links' | translate}}</h2>
 
         <div class="links">
 
