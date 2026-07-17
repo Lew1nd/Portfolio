@@ -50,6 +50,29 @@
 
     </section>
 
+    <!-- Objetivos -->
+    <section>
+        <h2>{{ 'projects.project-page.objetives' | translate }}</h2>
+
+        <p class="project-description">
+            {{ 'projects.' + projectSlug + '.objetives' | translate }}
+        </p>
+    </section>
+
+    <!-- Arquitectura -->
+    <section>
+        <h2>{{'projects.project-page.architecture' | translate}}</h2>
+        <div class="feature-list">
+
+            @for(arch of architecture; track arch){
+
+            <div class="feature"> {{ arch }} </div>
+
+            }
+        </div>
+
+    </section>
+
     <!-- Tecnologías -->
     <section>
 
@@ -101,13 +124,23 @@
 
             @for (capture of project.captures; track capture) {
 
-            <img [src]="capture" [alt]="project.name">
+            <img [src]="capture" [alt]="project.name" (click)="openImage(capture)">
 
             }
 
         </div>
 
     </section>
+
+    }
+
+    @if(selectedImage){
+
+    <div class="image-modal" (click)="closeImage()">
+
+        <img class="image-preview" [src]="selectedImage" (click)="$event.stopPropagation()">
+
+    </div>
 
     }
 
@@ -145,21 +178,42 @@
 
     }
 
+    <!-- Desafíos -->
+    <section>
+        <h2>{{'projects.project-page.challenges' | translate}}</h2>
+
+        <div class="feature-list">
+            @for(challenge of challenges; track challenge){
+            <div class="learnings">
+
+                {{ challenge }}
+
+            </div>
+            }
+
+        </div>
+
+
+
+
+    </section>
+
     <!-- Aprendizajes -->
     <section>
 
         <h2>{{'projects.project-page.learning' | translate}}</h2>
 
-        @for(learning of learnings; track learning){
+        <div class="feature-list">
+            @for(learning of learnings; track learning){
 
-        <div class="learnings">
+            <div class="learnings">
 
-            {{ learning }}
+                {{ learning }}
 
+            </div>
+
+            }
         </div>
-
-        }
-
     </section>
 
     <!-- Enlaces -->

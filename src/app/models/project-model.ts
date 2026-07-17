@@ -26,8 +26,11 @@ export interface Project {
     demo?: string;
 
     // Contenido
+    objetive: string;
+    architecture: string [];
     features: string[];
     learnings: string[];
+    challenges: string[]; 
 
     // Fechas
     startDate?: Date;

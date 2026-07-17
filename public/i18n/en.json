@@ -14,27 +14,39 @@
             "name": "Planet Breaker",
             "short-description": "Arcade shooter - 2D - Sci-fi",
             "description": "A 2D arcade game inspired by Asteroids. You control a spaceship pilot hired by a corporation tasked with destroying the planets of the Federation: an evil organization that has seized control of most of the world's planets. To accomplish this, you'll have access to a vast arsenal of ships, each with different abilities and playstyles.",
+            "objetives": "The goal was to create a fast-paced, arcade-style game with a simple movement and shooting system, all focused on the same objective (destroying the planet), but with increasing difficulty as the player progresses. It also offered a straightforward progression system based primarily on skill. While the game is challenging because there's no concept of hit points - if the ship is hit, it dies - this gives the game a more aggressive feel.",
+            "architecture": [
+                "Unity as a development engine",
+                "Component-based architecture",
+                "Scriptable objects",
+                "Object pooling",
+                "Addressables",
+                "Dependency injection",
+                "JSON for persistence"
+            ],
             "features": [
-                "Procedural planet system with dynamic generation.",
-                "Variety of playable ships with unique abilities and styles.",
-                "Enemies with AI and varied attack patterns.",
-                "Satellites, bosses, and special abilities depending on the planet.",
-                "Modular upgrade system with permanent progression.",
-                "Scalable difficulty with multiple challenge levels.",
-                "Bullet Hell with complex projectiles and patterns.",
-                "Centralized audio management via AudioMixer.",
-                "Visual effects, custom shaders, and pixel art style design.",
-                "Modular architecture based on reusable components."
+                "More than 10 ships with distinct playstyles and abilities.",
+                "More than 10 planets with unique abilities.",
+                "Scalable and progressive gameplay difficulty.",
+                "Permanent and upgradeable progression system using in-game currency.",
+                "Variety of enemies: asteroids, enemy ships, satellites, and bosses.",
+                "Dialogue system and lore"
             ],
             "learnings": [
-                "Implementation of a scalable difficulty system.",
-                "Use of ScriptableObjects, Factories, and Singletons.",
-                "Implementation of pooling for enemy generation using Addressables.",
-                "Level reuse: all planets use the same level; only its behavior changes.",
-                "Animations using Spritesheets.",
-                "Development of an event-driven dialogue system.",
-                "Use of Particle Systems.",
-                "JSON-based persistence: each ship has its own file."
+                "I understood the importance of Object Pooling for maintaining stable performance in games with a large number of simultaneous enemies and projectiles, reducing the constant creation and destruction of GameObjects.",
+                "I learned to design asynchronous loading systems using Addressables, minimizing wait times and improving the player experience through resource preloading.",
+                "I developed my own dialogue system based on data files and ScriptableObjects, allowing me to create a flexible, decoupled, and easily extensible solution for events and conversations.",
+                "I learned to model relationships between entities using enums and faction systems, achieving complex behaviors such as alliances, neutral enemies, and conflicts between different organizations.",
+                "I understood the value of automating repetitive processes. Creating reusable templates for new ships drastically reduced development time and facilitated the addition of content as the project grew.",
+                "I gained experience designing persistence systems using JSON files, organizing player progress and configuration. Each ship in a clear, scalable and easy-to-maintain way."
+            ],
+            "challenges": [
+                "Optimization was a detail I always kept in mind. Since the enemy generation system is conceptually similar to that of Vampire Survivors, the reuse of GameObjects is crucial to avoid memory and CPU overload. For this, I used a pooling system.",
+                "I also aimed for fast loading times. Because the player will be selecting planets very quickly and dying frequently, loading must be as fast as possible. To achieve this, I implemented an asynchronous loading system: the game generates enemies while the player is in the game, and they are pre-loaded before the mission starts since they are all treated as addressable objects.",
+                "One challenge was implementing a dialogue system: I wanted to create my own so I could adapt it to my needs. The implementation of this system involves the game loading a text file with the dialogues, and the events are contained in ScriptableObjects. When the corresponding dialogue starts, events are triggered (choosing an option, switching to another dialogue group), all using a dialogue index.",
+                "The game includes a war faction system: While it wasn't in the original plans, I decided to implement it. Initially, it had its flaws, as all enemies were considered enemies. However, with the use of enums and types, the enemy's faction will matter significantly, allowing an enemy from faction A to attack faction B. Enemies that act as allies of the player were even implemented.",
+                "Another detail I always considered was adding content: Since I'm developing this game alone, time is crucial. At first, it took me quite a while to implement a ship. However, this has been automated, as each ship has its own template of classes and components to fill with data and create the object. What used to take a week now only takes hours, allowing me to add more content quickly.",
+                "Implementing a persistence system was also something I had to address: I resorted to using JSON files, as they are much simpler and very easy to read and deserialize as data for the game. Currently, each ship has its own JSON file with its upgrade status and values ​​such as damage and movement speed, in addition to a player file. which determines its general progress (planets destroyed, at what difficulty it destroyed them, etc.)"
             ]
         },
         "project-types": {
@@ -51,6 +63,9 @@
         },
         "project-page": {
             "description": "Description",
+            "objetives": "Objetives",
+            "architecture": "Architecture",
+            "challenges": "Challenges",
             "technologies": "Technologies",
             "info": "Information",
             "gallery": "Gallery",

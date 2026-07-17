@@ -20,6 +20,10 @@ export class Projects {
 
   features: string[] = [];
   learnings: string[] = [];
+  challenges: string[] = [];
+  architecture: string[] = [];
+
+  selectedImage: string | null = null;
 
   constructor(
     private route: ActivatedRoute,
@@ -38,15 +42,27 @@ export class Projects {
     });
 
     //-----
-    this.translation.translateContent(this.projectSlug, "features").subscribe(features => {
-      this.features = features;
-    });
-
-    //-----
-    this.translation.translateContent(this.projectSlug, "learnings").subscribe(learnings => {
-      this.learnings = learnings;
+    this.translation.translateProject(this.projectSlug).subscribe(project => {
+      this.features = project.features;
+      this.learnings = project.learnings;
+      this.challenges = project.challenges;
+      console.log(project.architecture);
+      this.architecture = project.architecture;
+      console.log(this.architecture);
     });
 
   }
+
+  //--------- IMAGEN -----------
+
+  openImage(image: string) {
+    this.selectedImage = image;
+  }
+
+  closeImage() {
+    this.selectedImage = null;
+  }
+
+  //--------- IMAGEN -----------
 
 }
