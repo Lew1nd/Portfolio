@@ -7,8 +7,8 @@ import { TranslateService } from '@ngx-translate/core';
 export class TranslationService {
   private translate = inject(TranslateService);
 
-  translateProject(projectSlug: string) {
-  return this.translate.stream(`projects.${projectSlug}`);
-}
+  translateContent(slug: string) {
+    return this.translate.stream(slug);
+  }
 
 }

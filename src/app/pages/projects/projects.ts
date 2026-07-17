@@ -42,13 +42,11 @@ export class Projects {
     });
 
     //-----
-    this.translation.translateProject(this.projectSlug).subscribe(project => {
+    this.translation.translateContent(`projects.${this.projectSlug}`).subscribe(project => {
       this.features = project.features;
       this.learnings = project.learnings;
       this.challenges = project.challenges;
-      console.log(project.architecture);
       this.architecture = project.architecture;
-      console.log(this.architecture);
     });
 
   }

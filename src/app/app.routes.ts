@@ -7,6 +7,8 @@ export const routes: Routes =
 
     //Rutas
     { path: 'home', loadComponent:() => import('./pages/home/home').then(m => m.Home) },
+    { path: 'aboutme', loadComponent:() => import('./pages/aboutme/aboutme').then(m => m.Aboutme) },
+
     { path: 'projects/:slug', loadComponent: () => import('./pages/projects/projects').then(m => m.Projects) },
 
     // Ruta comodín

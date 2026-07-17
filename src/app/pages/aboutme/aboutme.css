@@ -1,0 +1,207 @@
+.about-page{
+
+    width:min(1200px,90%);
+
+    margin:4rem auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:2rem;
+}
+
+.page-title{
+
+    text-align:center;
+
+    font-size:3rem;
+
+    margin-bottom:2rem;
+}
+
+.about-card{
+
+    background:rgba(20,20,35,.75);
+
+    border:1px solid rgba(255,0,180,.25);
+
+    border-radius:18px;
+
+    padding:2rem;
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:
+        0 0 20px rgba(255,0,180,.12);
+
+    transition:.25s;
+}
+
+.about-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 0 30px rgba(0,255,255,.18);
+}
+
+.about-card h2{
+
+    color:#ff4fd8;
+
+    margin-bottom:1rem;
+}
+
+.hero{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:2rem;
+
+    flex-wrap:wrap;
+}
+
+.hero-avatar img{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:3px solid #00e5ff;
+
+    box-shadow:
+        0 0 25px rgba(0,229,255,.5);
+}
+
+.hero-content{
+
+    flex:1;
+}
+
+.hero-role{
+
+    color:#00d9ff;
+
+    font-size:1.2rem;
+}
+
+.tech-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+
+    gap:1rem;
+}
+
+.tech-item{
+
+    padding:1rem;
+
+    text-align:center;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(0,229,255,.25);
+
+    transition:.25s;
+}
+
+.tech-item:hover{
+
+    transform:scale(1.05);
+
+    border-color:#00e5ff;
+}
+
+.hobby-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:1rem;
+}
+
+.hobby{
+
+    padding:1rem;
+
+    text-align:center;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.05);
+}
+
+.workflow{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:1rem;
+
+    flex-wrap:wrap;
+}
+
+.step{
+
+    padding:1rem 1.5rem;
+
+    border-radius:12px;
+
+    background:rgba(255,0,180,.08);
+
+    border:1px solid rgba(255,0,180,.3);
+
+    font-weight:bold;
+}
+
+.arrow{
+
+    color:#00d9ff;
+
+    font-size:1.6rem;
+
+    font-weight:bold;
+}
+
+ul{
+
+    padding-left:1.3rem;
+
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+    .hero{
+
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    .workflow{
+
+        flex-direction:column;
+    }
+
+    .arrow{
+
+        transform:rotate(90deg);
+    }
+
+}

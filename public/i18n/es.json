@@ -12,7 +12,7 @@
     "projects": {
         "planet-breaker": {
             "name": "Planet Breaker",
-            "short-description": "Arcade shooter - 2D - Sci-fi",
+            "shortDescription": "Arcade shooter - 2D - Sci-fi",
             "description": "Juego arcade 2D inspirado en Asteroids. Controlaremos a un piloto de naves que será contratado por una corporación que tiene como objetivo destruir los planetas de La Federación: una corporación maligna que se apoderó de gran parte de los planetas. Para ello dispondremos de un gran arsenal de naves con habilidades y estilos de juego diferentes.",
             "objetives": "El objetivo era hacer un juego con jugabilidad arcade y rápida, con un sistema de movimiento y disparo simple y con el mismo objetivo (destruir el planeta) solo que escalando la dificultad a medida que el jugador avance. Además de ofrecer un sistema de progresión sencilla basada principalmente en la habilidad. Si bien la dificultad del juego es alta ya que no hay un concepto de puntos de vida - si la nave recibe un impacto muere-  esto le da al juego un estilo más agresivo.",
             "architecture": [
@@ -75,5 +75,22 @@
             "learning": "Lo que aprendí",
             "links": "Enlaces"
         }
+    },
+    "aboutme": {
+        "tittle" :"Sobre mí",
+        "role" :"Full Stack Developer • Game Developer",
+        "extraRole" : "Estudiante de Programación en la UTN.",
+        "aboutme" :"¿Quién soy?",
+        "aboutmeDescription":"",
+        "technologies" : "Tecnologías",
+        "philosophy" :"Mi filosofía",
+        "philosophDescription" : [],
+        "iLike" :"¿Qué disfruto desarrollar?",
+        "iLikeDescription" : [],
+        "iResolve" :"¿Qué problemas disfruto resolver?",
+        "iResolveDescription" : [],
+        "hobbiesDescription" :[],
+        "objetives" :"¿Qué busco?",
+        "objetivesDescription" : []
     }
 }
