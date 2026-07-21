@@ -1,6 +1,6 @@
 {
     "home": {
-        "description": "Hi, I'm Tomás, though you probably know me as Lewind. I'm a Unity game developer and a full-stack developer, passionate about creating software that combines creativity, performance, and a solid architecture. I'm currently studying Programming at UTN and dedicate a lot of my time to developing personal projects that allow me to experiment with new technologies, hone my skills, and turn ideas into complete applications and video games.",
+        "description": "Hi, I'm Tomás, though you probably know me as Lewind. I'm a Unity game developer and a full-stack web developer, passionate about creating software that combines creativity, performance, and a solid architecture. I'm currently studying Programming at UTN and dedicate a lot of my time to developing personal projects that allow me to experiment with new technologies, hone my skills, and turn ideas into complete applications and video games.",
         "projects": "Projects"
     },
     "header": {
@@ -77,20 +77,35 @@
         }
     },
     "aboutme": {
-        "tittle" :"About me",
-        "role" :"Full Stack Developer • Game Developer",
-        "extraRole" : "Programming student at UTN.",
-        "aboutme" :"Who am I?",
-        "aboutmeDescription":"",
-        "technologies" : "Technologies",
-        "philosophy" :"My philosophy",
-        "philosophyDescription" : [],
-        "iLike" :"What do I enjoy developing?",
-        "iLikeDescription" : [],
-        "iResolve" :"What problems do I enjoy solving?",
-        "iResolveDescription" : [],
-        "hobbiesDescription" :[],
-        "objetives" :"What am I looking for?",
-        "objetivesDescription" : []
+        "tittle": "About me",
+        "role": "Full Stack Developer • Game Developer",
+        "extraRole": "Programming student at UTN.",
+        "aboutme": "Who am I?",
+        "aboutmeDescription": "I'm a Unity game developer and a full-stack web developer, passionate about creating software that combines creativity, performance, and a robust architecture. I enjoy transforming ideas into complete projects, designing scalable and reusable solutions that can evolve over time. I'm currently studying Programming at UTN and dedicate a significant amount of my time to developing personal projects to continue learning and refining my skills.",
+        "technologies": "Technologies",
+        "philosophy": "My philosophy",
+        "philosophyDescription": [
+            "I believe that good software should not only work, but also be easy to maintain and evolve. Before implementing any functionality, I strive to understand the problem and design an architecture that allows for component reuse, automates repetitive tasks, and facilitates future expansions. I believe that optimization is only worthwhile when it addresses a genuine need, and that code clarity is just as important as performance."
+        ],
+        "iLike": "What do I enjoy developing?",
+        "iLikeDescription": [
+            "I enjoy creating applications that can grow, focusing more on the system and what it contributes rather than addressing each problem separately.",
+            "I enjoy working in a team, learning and listening to different points of view to apply to projects."
+        ],
+        "iResolve": "What problems do I enjoy solving?",
+        "iResolveDescription": [
+            "Performance and efficiency problems",
+            "Architectural and structural problems",
+            "Problemas de escalabilidad y reutilización"
+        ],
+        "hobbiesDescription": [
+            "In my free time I'm a writer; I'm currently working on a science fiction and horror novel. I really enjoy learning about this area because I also use it in video games.",
+            "I'm also a Gymrat, I really enjoy exercising and improving my physique, I focus on powerlifting and calisthenics.",
+            "I also enjoy playing different video games, and I tend to analyze them and understand how they are made."
+        ],
+        "objetives": "What am I looking for?",
+        "objetivesDescription": [
+            "My goal is to continue growing as a developer by participating in projects that present both technical and creative challenges. I'm interested in working in teams where I can learn from other professionals, contribute well-designed solutions, and continue specializing in both game development and full-stack applications. In the long term, I aspire to develop my own projects with a commercial focus and high quality."
+        ]
     }
 }

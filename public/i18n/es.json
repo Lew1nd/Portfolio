@@ -1,6 +1,6 @@
 {
     "home": {
-        "description": "Hola, soy Tomás, aunque probablemente me conozcas como Lewind. Soy desarrollador de videojuegos con Unity y desarrollador Full Stack, apasionado por crear software que combine creatividad, rendimiento y una arquitectura sólida. Actualmente estudio Programación en la UTN y dedico gran parte de mi tiempo a desarrollar proyectos personales que me permiten experimentar con nuevas tecnologías, perfeccionar mis habilidades y convertir ideas en aplicaciones y videojuegos completos.",
+        "description": "Hola, soy Tomás, aunque probablemente me conozcas como Lewind. Soy desarrollador de videojuegos con Unity y desarrollador web Full Stack, apasionado por crear software que combine creatividad, rendimiento y una arquitectura sólida. Actualmente estudio Programación en la UTN y dedico gran parte de mi tiempo a desarrollar proyectos personales que me permiten experimentar con nuevas tecnologías, perfeccionar mis habilidades y convertir ideas en aplicaciones y videojuegos completos.",
         "projects": "Proyectos"
     },
     "header": {
@@ -30,7 +30,7 @@
                 "Dificultad de juego escalable y progresiva",
                 "Sistema de progreso permanente y mejorable con uso de la currency del juego",
                 "Variedad de enemigos: asteroides, naves enemigas, satélites y jefes",
-                "Sistema de diálogo y lore" 
+                "Sistema de diálogo y lore"
             ],
             "learnings": [
                 "Comprendí la importancia del Object Pooling para mantener un rendimiento estable en juegos con una gran cantidad de enemigos y proyectiles simultáneos, reduciendo la creación y destrucción constante de GameObjects.",
@@ -77,20 +77,35 @@
         }
     },
     "aboutme": {
-        "tittle" :"Sobre mí",
-        "role" :"Full Stack Developer • Game Developer",
-        "extraRole" : "Estudiante de Programación en la UTN.",
-        "aboutme" :"¿Quién soy?",
-        "aboutmeDescription":"",
-        "technologies" : "Tecnologías",
-        "philosophy" :"Mi filosofía",
-        "philosophyDescription" : ["asd", "bds"],
-        "iLike" :"¿Qué disfruto desarrollar?",
-        "iLikeDescription" : ["no sé"],
-        "iResolve" :"¿Qué problemas disfruto resolver?",
-        "iResolveDescription" : ["Algo"],
-        "hobbiesDescription" :["Me gusta aser eso"],
-        "objetives" :"¿Qué busco?",
-        "objetivesDescription" : ["mi objetivo"]
+        "tittle": "Sobre mí",
+        "role": "Full Stack Developer • Game Developer",
+        "extraRole": "Estudiante de Programación en la UTN.",
+        "aboutme": "¿Quién soy?",
+        "aboutmeDescription": "Soy desarrollador de videojuegos con Unity y desarrollador Full Stack web, apasionado por crear software que combine creatividad, rendimiento y una arquitectura sólida. Disfruto transformar ideas en proyectos completos, diseñando soluciones escalables y reutilizables que puedan evolucionar con el tiempo. Actualmente estudio Programación en la UTN y dedico gran parte de mi tiempo a desarrollar proyectos personales para seguir aprendiendo y perfeccionando mis habilidades.",
+        "technologies": "Tecnologías",
+        "philosophy": "Mi filosofía",
+        "philosophyDescription": [
+            "Creo que un buen software no solo debe funcionar, sino también ser fácil de mantener y evolucionar. Antes de implementar una funcionalidad, procuro comprender el problema y diseñar una arquitectura que permita reutilizar componentes, automatizar tareas repetitivas y facilitar futuras ampliaciones. Considero que la optimización tiene sentido cuando responde a una necesidad real y que la claridad del código es tan importante como su rendimiento."
+        ],
+        "iLike": "¿Qué disfruto desarrollar?",
+        "iLikeDescription": [
+            "Disfruto crear aplicaciones que puedan crecer, enfocandome más en el sistema y lo que aporta más que tratar cada problema por separado.",
+            "Me gusta trabajar en equipo, aprendiendo y escuchando diferentes puntos de vista para aplicar en los proyectos."
+        ],
+        "iResolve": "¿Qué problemas disfruto resolver?",
+        "iResolveDescription": [
+            "Problemas de rendimiento y eficiencia",
+            "Problemas de arquitectura y estructura",
+            "Problemas de escalabilidad y reutilización"
+        ],
+        "hobbiesDescription": [
+            "En mis tiempos libres soy escritor, actualmente estoy con una novela de ciencia ficción y terror. Me gusta mucho aprender este área ya que también lo implemento en los videojuegos.",
+            "También soy Gymrat, me gusta mucho hacer ejercicio y mejorar mi fisico, me enfoco en el powerlifting y la calistenia.",
+            "También me gusta jugar a diferentes videojuegos, además tiendo a analizarlos y comprender cómo están hechos."
+        ],
+        "objetives": "¿Qué busco?",
+        "objetivesDescription": [
+            "Mi objetivo es seguir creciendo como desarrollador participando en proyectos que representen desafíos técnicos y creativos. Me interesa trabajar en equipos donde pueda aprender de otros profesionales, aportar soluciones bien diseñadas y continuar especializándome tanto en desarrollo de videojuegos como en aplicaciones Full Stack. A largo plazo, aspiro a desarrollar proyectos propios con un enfoque comercial y de alta calidad."
+        ]
     }
 }
