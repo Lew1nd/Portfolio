@@ -84,13 +84,13 @@
         "aboutmeDescription":"",
         "technologies" : "Tecnologías",
         "philosophy" :"Mi filosofía",
-        "philosophDescription" : [],
+        "philosophyDescription" : ["asd", "bds"],
         "iLike" :"¿Qué disfruto desarrollar?",
-        "iLikeDescription" : [],
+        "iLikeDescription" : ["no sé"],
         "iResolve" :"¿Qué problemas disfruto resolver?",
-        "iResolveDescription" : [],
-        "hobbiesDescription" :[],
+        "iResolveDescription" : ["Algo"],
+        "hobbiesDescription" :["Me gusta aser eso"],
         "objetives" :"¿Qué busco?",
-        "objetivesDescription" : []
+        "objetivesDescription" : ["mi objetivo"]
     }
 }

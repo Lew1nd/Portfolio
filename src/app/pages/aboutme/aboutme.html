@@ -6,19 +6,19 @@
     <section class="about-card hero">
 
         <div class="hero-avatar">
-            <!--<img src="images/profile.png" alt="Lewind">-->
+            <!--<img src="images/profile.jpg" alt="Lewind">-->
         </div>
 
         <div class="hero-content">
 
-            <h2>Tomás "Lewind"</h2>
+            <h2>Tomás - "Lewind"</h2>
 
             <p class="hero-role">
-                Full Stack Developer • Game Developer
+                {{'aboutme.role' | translate}}
             </p>
 
             <p>
-                Estudiante de Programación en la UTN.
+                {{'aboutme.extraRole' | translate}}
             </p>
 
         </div>
@@ -28,10 +28,10 @@
     <!-- Quién soy -->
     <section class="about-card">
 
-        <h2>¿Quién soy?</h2>
+        <h2>{{'aboutme.aboutme' | translate}}</h2>
 
         <p>
-            Lorem ipsum...
+            {{'aboutme.aboutmeDescription' | translate}}
         </p>
 
     </section>
@@ -39,17 +39,110 @@
     <!-- Tecnologías -->
     <section class="about-card">
 
-        <h2>Tecnologías</h2>
+        <h2>{{'aboutme.technologies' | translate}}</h2>
 
-        <div class="tech-grid">
+        <div class="tech-category">
+            <h3 class="tech-tittle">Frontend</h3>
 
-            <div class="tech-item">Angular</div>
-            <div class="tech-item">Unity</div>
-            <div class="tech-item">C#</div>
-            <div class="tech-item">TypeScript</div>
-            <div class="tech-item">Supabase</div>
-            <div class="tech-item">Git</div>
+            <div class="tech-grid">
 
+                <div class="tech-item">Angular</div>
+                <div class="tech-item">CSS</div>
+                <div class="tech-item">HTML</div>
+
+            </div>
+        </div>
+
+        <div class="tech-category">
+            <h3 class="tech-tittle">Backend</h3>
+
+            <div class="tech-grid">
+
+                <div class="tech-item">.NET</div>
+                <div class="tech-item">Express.js</div>
+                <div class="tech-item">Nest.js</div>
+                <div class="tech-item">Node.js</div>
+                <div class="tech-item">EJS</div>
+
+            </div>
+        </div>
+
+        <div class="tech-category">
+            <h3 class="tech-tittle">Databases</h3>
+
+            <div class="tech-grid">
+
+                <div class="tech-item">Supabase</div>
+                <div class="tech-item">MongoDB</div>
+                <div class="tech-item">SQLite</div>
+                <div class="tech-item">MySQL</div>
+
+            </div>
+        </div>
+
+        <div class="tech-category">
+            <h3 class="tech-tittle">Cloud & deployment</h3>
+
+            <div class="tech-grid">
+
+                <div class="tech-item">Vercel</div>
+                <div class="tech-item">Render</div>
+                <div class="tech-item">Railway</div>
+
+            </div>
+        </div>
+
+        <div class="tech-category">
+            <h3 class="tech-tittle">Game development</h3>
+
+            <div class="tech-grid">
+
+                <div class="tech-item">Unity</div>
+
+            </div>
+        </div>
+
+        <div class="tech-category">
+            <h3 class="tech-tittle">Languages</h3>
+
+            <div class="tech-grid">
+
+                <div class="tech-item">Python</div>
+                <div class="tech-item">C#</div>
+                <div class="tech-item">C++</div>
+                <div class="tech-item">Javascript</div>
+                <div class="tech-item">Java</div>
+
+            </div>
+        </div>
+
+        <div class="tech-category">
+            <h3 class="tech-tittle">Design</h3>
+
+            <div class="tech-grid">
+
+                <div class="tech-item">Canva</div>
+                <div class="tech-item">Abode Photoshop</div>
+                <div class="tech-item">Inkscape</div>
+
+            </div>
+        </div>
+
+        <div class="tech-category">
+            <h3 class="tech-tittle">Herramientas</h3>
+
+            <div class="tech-grid">
+
+                <div class="tech-item">Postman</div>
+                <div class="tech-item">Trello</div>
+                <div class="tech-item">Git</div>
+                <div class="tech-item">Github</div>
+                <div class="tech-item">Vagrant</div>
+                <div class="tech-item">NPM</div>
+                <div class="tech-item">Nginx</div>
+                <div class="tech-item">Obsidian</div>
+
+            </div>
         </div>
 
     </section>
@@ -57,66 +150,64 @@
     <!-- Filosofía -->
     <section class="about-card">
 
-        <h2>Mi filosofía</h2>
+        <h2>{{'aboutme.philosophy' | translate}}</h2>
 
-        <ul>
+        <div>
+            @for (philosophy of philosophies; track philosophy) {
 
-            <li>Priorizar la mantenibilidad.</li>
-            <li>Crear componentes reutilizables.</li>
-            <li>Optimizar cuando aporta valor.</li>
-            <li>Diseñar pensando en la escalabilidad.</li>
+            <div>
+                {{ philosophy }}
+            </div>
+            }
+        </div>
 
-        </ul>
 
     </section>
 
     <!-- Qué disfruto desarrollar -->
     <section class="about-card">
 
-        <h2>¿Qué disfruto desarrollar?</h2>
+        <h2>{{'aboutme.iLike' | translate}}</h2>
 
-        <ul>
+        <div>
+            @for (iLike of iLikes; track iLike) {
 
-            <li>Videojuegos.</li>
-            <li>Sistemas modulares.</li>
-            <li>Herramientas.</li>
-            <li>Interfaces modernas.</li>
-
-        </ul>
+            <div>
+                {{ iLike }}
+            </div>
+            }
+        </div>
 
     </section>
 
     <!-- Problemas -->
     <section class="about-card">
 
-        <h2>¿Qué problemas me gusta resolver?</h2>
+        <h2>{{'aboutme.iResolve' | translate}}</h2>
 
-        <ul>
+        <div>
+            @for (iResolve of iResolves; track iResolve) {
 
-            <li>Optimización.</li>
-            <li>Arquitecturas.</li>
-            <li>Automatización.</li>
-            <li>Gameplay.</li>
-
-        </ul>
+            <div>
+                {{ iResolve }}
+            </div>
+            }
+        </div>
 
     </section>
 
     <!-- Hobbies -->
     <section class="about-card">
 
-        <h2>Mis hobbies</h2>
+        <h2>Hobbies</h2>
 
-        <div class="hobby-grid">
+        <div>
+            @for (hobbie of hobbies; track hobbie) {
 
-            <div class="hobby">🎮 Desarrollo de videojuegos</div>
-
-            <div class="hobby">🏋️ Gimnasio</div>
-
-            <div class="hobby">📖 Lectura</div>
-
-            <div class="hobby">🎵 Música Synthwave</div>
-
+            <div>
+                {{ hobbie }}
+            </div>
+            }
         </div>
 
     </section>
@@ -124,19 +215,16 @@
     <!-- Objetivos -->
     <section class="about-card">
 
-        <h2>Objetivos</h2>
+        <h2>{{'aboutme.objetives' | translate}}</h2>
 
-        <ul>
+        <div>
+            @for (objetive of objetives; track objetive) {
 
-            <li>Crecer como desarrollador.</li>
-
-            <li>Participar en proyectos ambiciosos.</li>
-
-            <li>Aprender nuevas tecnologías.</li>
-
-            <li>Crear videojuegos comerciales.</li>
-
-        </ul>
+            <div>
+                {{ objetive }}
+            </div>
+            }
+        </div>
 
     </section>
 

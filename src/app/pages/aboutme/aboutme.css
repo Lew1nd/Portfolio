@@ -101,11 +101,25 @@
     gap:1rem;
 }
 
+.tech-tittle{
+
+    margin-bottom:1rem;
+    margin-top:0.5rem;
+}
+
+.tech-category{
+
+    margin-bottom:2rem;
+    
+}
+
 .tech-item{
 
     padding:1rem;
 
     text-align:center;
+
+    margin-bottom:0.5rem;
 
     border-radius:12px;
 

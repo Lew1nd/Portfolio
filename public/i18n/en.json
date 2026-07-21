@@ -81,16 +81,16 @@
         "role" :"Full Stack Developer • Game Developer",
         "extraRole" : "Programming student at UTN.",
         "aboutme" :"Who am I?",
-        "aboutme-description":"",
+        "aboutmeDescription":"",
         "technologies" : "Technologies",
         "philosophy" :"My philosophy",
-        "philosophy-description" : [],
+        "philosophyDescription" : [],
         "iLike" :"What do I enjoy developing?",
-        "iLike-description" : [],
+        "iLikeDescription" : [],
         "iResolve" :"What problems do I enjoy solving?",
-        "iResolve-description" : [],
-        "hobbies-description" :[],
+        "iResolveDescription" : [],
+        "hobbiesDescription" :[],
         "objetives" :"What am I looking for?",
-        "objetives-description" : []
+        "objetivesDescription" : []
     }
 }

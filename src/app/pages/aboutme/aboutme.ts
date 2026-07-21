@@ -11,17 +11,17 @@ import { TranslationService } from '../../services/translation-service';
 export class Aboutme {
 private translation = inject(TranslationService);
 
-  philosophy: string[] = [];
-  iLike: string[] = [];
-  iResolve: string[] = [];
+  philosophies: string[] = [];
+  iLikes: string[] = [];
+  iResolves: string[] = [];
   hobbies: string[] = [];
   objetives: string[] = [];
 
   constructor() {
     this.translation.translateContent('aboutme').subscribe(content => {
-      this.philosophy = content.philosophy;
-      this.iLike = content.ilikeDescription;
-      this.iResolve = content.iresolveDescription;
+      this.philosophies = content.philosophyDescription;
+      this.iLikes = content.iLikeDescription;
+      this.iResolves = content.iResolveDescription;
       this.hobbies = content.hobbiesDescription;
       this.objetives = content.objetivesDescription;
     });
