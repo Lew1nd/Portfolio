@@ -1,0 +1,235 @@
+<div class="contact-page">
+
+    <h1 class="neon tittle">Contacto</h1>
+
+    <p class="contact-description tittle-content">
+        ¿Tenés una propuesta, una consulta o simplemente querés hablar sobre desarrollo de software o videojuegos?
+        Elegí el medio que prefieras o completá el formulario.
+    </p>
+
+    <div class="contact-layout">
+
+        <!-- Información -->
+
+        <section class="contact-info">
+
+            <h2>Información de contacto</h2>
+
+            <a class="contact-item" href="mailto:tezequielb2003@gmail.com">
+
+                <i class="bi bi-envelope-fill"></i>
+
+                <div>
+
+                    <span class="contact-title">Email</span>
+                    <span class="contact-value">tezequielb2003@gmail.com</span>
+
+                </div>
+
+            </a>
+
+            <a class="contact-item" href="https://www.linkedin.com/in/tomas-barrios2003" target="_blank" rel="noopener noreferrer">
+
+                <i class="bi bi-linkedin"></i>
+
+                <div>
+
+                    <span class="contact-title">LinkedIn</span>
+                    <span class="contact-value"> Tomás Barrios </span>
+
+                </div>
+
+            </a>
+
+            <a class="contact-item" href="https://github.com/Lew1nd" target="_blank" rel="noopener noreferrer">
+
+                <i class="bi bi-github"></i>
+
+                <div>
+
+                    <span class="contact-title">GitHub</span>
+                    <span class="contact-value"> Lew1nd </span>
+
+                </div>
+
+            </a>
+
+            <div class="contact-item">
+
+                <i class="bi bi-geo-alt-fill"></i>
+
+                <div>
+
+                    <span class="contact-title">Ubicación</span>
+
+                    <span class="contact-value">
+                        Argentina | UTC-3
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Formulario -->
+
+        <section class="contact-card">
+
+            <form [formGroup]="contactForm" (ngSubmit)="send()">
+
+                <!-- Nombre -->
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+
+                    <input id="name" type="text" formControlName="name" placeholder="Tu nombre">
+
+                    @if(contactForm.controls.name.touched && contactForm.controls.name.invalid){
+
+                    <small class="error">
+
+                        @if(contactForm.controls.name.errors?.['required']){
+                        El nombre es obligatorio.
+                        }
+
+                        @if(contactForm.controls.name.errors?.['minlength']){
+                        Debe contener al menos 4 caracteres.
+                        }
+
+                        @if(contactForm.controls.name.errors?.['maxlength']){
+                        Máximo 30 caracteres.
+                        }
+
+                    </small>
+
+                    }
+
+                </div>
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+                    <label for="email">Correo electrónico</label>
+
+                    <input id="email" type="email" formControlName="email" placeholder="Correo">
+
+                    @if(contactForm.controls.email.touched && contactForm.controls.email.invalid){
+
+                    <small class="error">
+
+                        @if(contactForm.controls.email.errors?.['required']){
+                        El correo es obligatorio.
+                        }
+
+                        @if(contactForm.controls.email.errors?.['email']){
+                        Correo inválido.
+                        }
+
+                    </small>
+
+                    }
+
+                </div>
+
+                <!-- Asunto -->
+
+                <div class="form-group">
+
+                    <label for="subject">Asunto</label>
+
+                    <input id="subject" type="text" formControlName="subject" placeholder="Asunto">
+
+                    @if(contactForm.controls.subject.touched && contactForm.controls.subject.invalid){
+
+                    <small class="error">
+
+                        @if(contactForm.controls.subject.errors?.['required']){
+                        El asunto es obligatorio.
+                        }
+
+                        @if(contactForm.controls.subject.errors?.['minlength']){
+                        Debe contener al menos 2 caracteres.
+                        }
+
+                        @if(contactForm.controls.subject.errors?.['maxlength']){
+                        Máximo 45 caracteres.
+                        }
+
+                    </small>
+
+                    }
+
+                </div>
+
+                <!-- Mensaje -->
+
+                <div class="form-group">
+
+                    <label for="message">Mensaje</label>
+
+                    <textarea id="message" rows="8" formControlName="message" placeholder="Escriba su mensaje...">
+                    </textarea>
+
+                    @if(contactForm.controls.message.touched && contactForm.controls.message.invalid){
+
+                    <small class="error">
+
+                        @if(contactForm.controls.message.errors?.['required']){
+                        El mensaje es obligatorio.
+                        }
+
+                        @if(contactForm.controls.message.errors?.['minlength']){
+                        Debe contener al menos 5 caracteres.
+                        }
+
+                        @if(contactForm.controls.name.errors?.['maxlength']){
+                        Máximo 500 caracteres.
+                        }
+
+                    </small>
+                    }
+
+                </div>
+
+                <button class="send-btn" type="submit" [disabled]="contactForm.invalid || loading()">
+
+                    @if(!loading()){
+
+                    Enviar mensaje
+
+                    } @else {
+
+                    Enviando...
+
+                    }
+
+                </button>
+
+            </form>
+
+            @if(status() === 'success'){
+
+            <p class="status success">
+
+                ✔ Mensaje enviado correctamente.
+
+            </p>
+
+            }
+
+            @if(status() === 'error'){
+
+            <p class="status error-status">
+
+                ✖ No fue posible enviar el mensaje.
+
+            </p>
+
+            }
+
+        </section>
+
+    </div>
+
+</div>
