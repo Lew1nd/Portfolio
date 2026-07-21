@@ -1,19 +1,15 @@
 <div class="contact-page">
 
-    <h1 class="neon tittle">Contacto</h1>
+    <h1 class="neon tittle"> {{'contact.tittle' | translate}}</h1>
 
-    <p class="contact-description tittle-content">
-        ¿Tenés una propuesta, una consulta o simplemente querés hablar sobre desarrollo de software o videojuegos?
-        Elegí el medio que prefieras o completá el formulario.
-    </p>
+    <p class="contact-description tittle-content"> {{'contact.description' | translate}} </p>
 
     <div class="contact-layout">
 
         <!-- Información -->
-
         <section class="contact-info">
 
-            <h2>Información de contacto</h2>
+            <h2>{{'contact.contactInfo' | translate}}</h2>
 
             <a class="contact-item" href="mailto:tezequielb2003@gmail.com">
 
@@ -60,7 +56,7 @@
 
                 <div>
 
-                    <span class="contact-title">Ubicación</span>
+                    <span class="contact-title">{{'contact.location' | translate}}</span>
 
                     <span class="contact-value">
                         Argentina | UTC-3
@@ -80,24 +76,24 @@
 
                 <!-- Nombre -->
                 <div class="form-group">
-                    <label for="name">Nombre</label>
+                    <label for="name">{{'contact.nameTittle' | translate}}</label>
 
-                    <input id="name" type="text" formControlName="name" placeholder="Tu nombre">
+                    <input id="name" type="text" formControlName="name" placeholder="{{'contact.nameDescription' | translate}}">
 
                     @if(contactForm.controls.name.touched && contactForm.controls.name.invalid){
 
                     <small class="error">
 
                         @if(contactForm.controls.name.errors?.['required']){
-                        El nombre es obligatorio.
+                        {{'contact.errorName1' | translate}}
                         }
 
                         @if(contactForm.controls.name.errors?.['minlength']){
-                        Debe contener al menos 4 caracteres.
+                        {{'contact.errorName2' | translate}}
                         }
 
                         @if(contactForm.controls.name.errors?.['maxlength']){
-                        Máximo 30 caracteres.
+                        {{'contact.errorName3' | translate}}
                         }
 
                     </small>
@@ -110,20 +106,20 @@
 
                 <div class="form-group">
 
-                    <label for="email">Correo electrónico</label>
+                    <label for="email">{{'contact.emailTittle' | translate}}</label>
 
-                    <input id="email" type="email" formControlName="email" placeholder="Correo">
+                    <input id="email" type="email" formControlName="email" placeholder="{{'contact.emailDescription' | translate}}">
 
                     @if(contactForm.controls.email.touched && contactForm.controls.email.invalid){
 
                     <small class="error">
 
                         @if(contactForm.controls.email.errors?.['required']){
-                        El correo es obligatorio.
+                        {{'contact.errorEmail1' | translate}}
                         }
 
                         @if(contactForm.controls.email.errors?.['email']){
-                        Correo inválido.
+                        {{'contact.errorEmail2' | translate}}
                         }
 
                     </small>
@@ -136,24 +132,24 @@
 
                 <div class="form-group">
 
-                    <label for="subject">Asunto</label>
+                    <label for="subject">{{'contact.subjectTittle' | translate}}</label>
 
-                    <input id="subject" type="text" formControlName="subject" placeholder="Asunto">
+                    <input id="subject" type="text" formControlName="subject" placeholder="{{'contact.subjectDescription' | translate}}">
 
                     @if(contactForm.controls.subject.touched && contactForm.controls.subject.invalid){
 
                     <small class="error">
 
                         @if(contactForm.controls.subject.errors?.['required']){
-                        El asunto es obligatorio.
+                        {{'contact.errorSubject1' | translate}}
                         }
 
                         @if(contactForm.controls.subject.errors?.['minlength']){
-                        Debe contener al menos 2 caracteres.
+                        {{'contact.errorSubject2' | translate}}
                         }
 
                         @if(contactForm.controls.subject.errors?.['maxlength']){
-                        Máximo 45 caracteres.
+                        {{'contact.errorSubject3' | translate}}
                         }
 
                     </small>
@@ -166,9 +162,9 @@
 
                 <div class="form-group">
 
-                    <label for="message">Mensaje</label>
+                    <label for="message">{{'contact.messageTittle' | translate}}</label>
 
-                    <textarea id="message" rows="8" formControlName="message" placeholder="Escriba su mensaje...">
+                    <textarea id="message" rows="8" formControlName="message" placeholder="{{'contact.messageDescription' | translate}}">
                     </textarea>
 
                     @if(contactForm.controls.message.touched && contactForm.controls.message.invalid){
@@ -176,15 +172,15 @@
                     <small class="error">
 
                         @if(contactForm.controls.message.errors?.['required']){
-                        El mensaje es obligatorio.
+                        {{'contact.errorMessage1' | translate}}
                         }
 
                         @if(contactForm.controls.message.errors?.['minlength']){
-                        Debe contener al menos 5 caracteres.
+                        {{'contact.errorMessage2' | translate}}
                         }
 
                         @if(contactForm.controls.name.errors?.['maxlength']){
-                        Máximo 500 caracteres.
+                        {{'contact.errorMessage3' | translate}}
                         }
 
                     </small>
@@ -196,11 +192,11 @@
 
                     @if(!loading()){
 
-                    Enviar mensaje
+                    {{'contact.buttonMessage' | translate}}
 
                     } @else {
 
-                    Enviando...
+                    {{'contact.sendingMessage' | translate}}
 
                     }
 
@@ -212,7 +208,7 @@
 
             <p class="status success">
 
-                ✔ Mensaje enviado correctamente.
+                ✔️ {{'contact.successMessage' | translate}}
 
             </p>
 
@@ -222,7 +218,7 @@
 
             <p class="status error-status">
 
-                ✖ No fue posible enviar el mensaje.
+                ❌ {{'contact.errorMessage' | translate}}
 
             </p>
 

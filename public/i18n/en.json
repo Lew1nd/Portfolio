@@ -107,5 +107,34 @@
         "objetivesDescription": [
             "My goal is to continue growing as a developer by participating in projects that present both technical and creative challenges. I'm interested in working in teams where I can learn from other professionals, contribute well-designed solutions, and continue specializing in both game development and full-stack applications. In the long term, I aspire to develop my own projects with a commercial focus and high quality."
         ]
+    },
+    "contact": {
+        "tittle": "Contact",
+        "description": "Do you have a proposal or want to ask a question? Choose your preferred method or fill out the form.",
+        "contactInfo": "Contact information",
+        "location": "Location",
+        "nameTittle": "Name",
+        "nameDescription": "Your name",
+        "emailTittle": "Email",
+        "emailDescription": "Email",
+        "subjectTittle": "Subject",
+        "subjectDescription": "Subject",
+        "messageTittle": "Message",
+        "messageDescription": "Write your message...",
+        "buttonMessage": "Send message",
+        "sendingMessage": "Sending...",
+        "successMessage": "Message sent successfully.",
+        "errorMessage": "The message could not be sent.",
+        "errorName1": "Name is required.",
+        "errorName2": "It must contain at least 4 characters.",
+        "errorName3": "Maximum 30 characters.",
+        "errorEmail1": "Mail is required.",
+        "errorEmail2": "Invalid email.",
+        "errorSubject1": "Subject is required.",
+        "errorSubject2": "It must contain at least 2 characters.",
+        "errorSubject3": "Maximum 45 characters.",
+        "errorMessage1": "Message is required.",
+        "errorMessage2": "It must contain at least 5 characters.",
+        "errorMessage3": "Maximum 500 characters."
     }
 }

@@ -1,13 +1,12 @@
 import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { environment } from '../../environments/environment';
 import { EmailService } from '../../services/email-service';
 import { NonNullableFormBuilder, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
-  imports: [CommonModule, FormsModule, ReactiveFormsModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, TranslatePipe],
   templateUrl: './contact.html',
   styleUrl: './contact.css',
 })
@@ -34,7 +33,7 @@ export class Contact {
     try {
       const response = await this.emailService.send(this.contactForm.getRawValue());
       this.contactForm.reset();
-      
+
     }
     catch (err) {
       this.status.set('error');

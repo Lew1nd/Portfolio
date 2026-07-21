@@ -1,5 +1,4 @@
-import { Injectable, inject } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { Injectable } from '@angular/core';
 import { ContactMessage } from '../models/message-model';
 import emailjs from '@emailjs/browser';
 import { environment } from '../environments/environment';
@@ -7,8 +6,6 @@ import { EmailJSResponseStatus } from '@emailjs/browser';
 
 @Injectable({ providedIn: 'root' })
 export class EmailService {
-    private translate = inject(TranslateService);
-
     send(message: ContactMessage) : Promise<EmailJSResponseStatus> {
 
         //Validaciones

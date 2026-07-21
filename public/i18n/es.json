@@ -107,5 +107,40 @@
         "objetivesDescription": [
             "Mi objetivo es seguir creciendo como desarrollador participando en proyectos que representen desafíos técnicos y creativos. Me interesa trabajar en equipos donde pueda aprender de otros profesionales, aportar soluciones bien diseñadas y continuar especializándome tanto en desarrollo de videojuegos como en aplicaciones Full Stack. A largo plazo, aspiro a desarrollar proyectos propios con un enfoque comercial y de alta calidad."
         ]
+    },
+    "contact": {
+        "tittle": "Contacto",
+        "description":"¿Tenés una propuesta o quieres hacer una consulta? Elegí el medio que prefieras o completá el formulario.",
+        "contactInfo":"Información de contacto",
+        "location":"Ubicación",
+        "nameTittle":"Nombre",
+        "nameDescription":"Tu nombre",
+        "emailTittle":"Correo electrónico",
+        "emailDescription":"Correo",
+        "subjectTittle":"Asunto",
+        "subjectDescription":"Asunto",
+        "messageTittle":"Mensaje",
+        "messageDescription":"Escriba su mensaje...",
+        "buttonMessage":"Enviar mensaje",
+        "sendingMessage": "Enviando...",
+
+        "successMessage":"Mensaje enviado correctamente.",
+        "errorMessage": "No fue posible enviar el mensaje.",
+
+        "errorName1":"El nombre es obligatorio.",
+        "errorName2":"Debe contener al menos 4 caracteres.",
+        "errorName3":"Máximo 30 caracteres.",
+
+        "errorEmail1":"El correo es obligatorio.",
+        "errorEmail2":"Correo inválido.",
+
+        "errorSubject1":"El asunto es obligatorio.",
+        "errorSubject2":"Debe contener al menos 2 caracteres.",
+        "errorSubject3":"Máximo 45 caracteres.",
+
+        "errorMessage1":"El mensaje es obligatorio.",
+        "errorMessage2":"Debe contener al menos 5 caracteres.",
+        "errorMessage3":"Máximo 500 caracteres."
+
     }
 }
