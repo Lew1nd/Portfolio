@@ -1,7 +1,8 @@
 {
     "home": {
         "description": "Hi, I'm Tomás, though you probably know me as Lewind. I'm a Unity game developer and a full-stack web developer, passionate about creating software that combines creativity, performance, and a solid architecture. I'm currently studying Programming at UTN and dedicate a lot of my time to developing personal projects that allow me to experiment with new technologies, hone my skills, and turn ideas into complete applications and video games.",
-        "projects": "Projects"
+        "projects": "Projects",
+        "projectsDescription": "Here are all the current projects; more will be added over time."
     },
     "header": {
         "portfolio": "Portfolio",

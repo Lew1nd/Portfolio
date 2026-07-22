@@ -1,7 +1,8 @@
 {
     "home": {
         "description": "Hola, soy Tomás, aunque probablemente me conozcas como Lewind. Soy desarrollador de videojuegos con Unity y desarrollador web Full Stack, apasionado por crear software que combine creatividad, rendimiento y una arquitectura sólida. Actualmente estudio Programación en la UTN y dedico gran parte de mi tiempo a desarrollar proyectos personales que me permiten experimentar con nuevas tecnologías, perfeccionar mis habilidades y convertir ideas en aplicaciones y videojuegos completos.",
-        "projects": "Proyectos"
+        "projects": "Proyectos",
+        "projectsDescription": "Aquí están todos los proyectos actuales, con el tiempo se irán anadiendo más."
     },
     "header": {
         "portfolio": "Portafolio",
