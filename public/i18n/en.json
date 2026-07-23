@@ -17,13 +17,13 @@
             "description": "A 2D arcade game inspired by Asteroids. You control a spaceship pilot hired by a corporation tasked with destroying the planets of the Federation: an evil organization that has seized control of most of the world's planets. To accomplish this, you'll have access to a vast arsenal of ships, each with different abilities and playstyles.",
             "objetives": "The goal was to create a fast-paced, arcade-style game with a simple movement and shooting system, all focused on the same objective (destroying the planet), but with increasing difficulty as the player progresses. It also offered a straightforward progression system based primarily on skill. While the game is challenging because there's no concept of hit points - if the ship is hit, it dies - this gives the game a more aggressive feel.",
             "architecture": [
-                "Unity as a development engine",
-                "Component-based architecture",
-                "Scriptable objects",
-                "Object pooling",
-                "Addressables",
-                "Dependency injection",
-                "JSON for persistence"
+                "Unity as a development engine.",
+                "Component-based architecture.",
+                "Scriptable objects.",
+                "Object pooling.",
+                "Addressables.",
+                "Dependency injection.",
+                "JSON for persistence."
             ],
             "features": [
                 "More than 10 ships with distinct playstyles and abilities.",
@@ -31,7 +31,7 @@
                 "Scalable and progressive gameplay difficulty.",
                 "Permanent and upgradeable progression system using in-game currency.",
                 "Variety of enemies: asteroids, enemy ships, satellites, and bosses.",
-                "Dialogue system and lore"
+                "Dialogue system and lore."
             ],
             "learnings": [
                 "I understood the importance of Object Pooling for maintaining stable performance in games with a large number of simultaneous enemies and projectiles, reducing the constant creation and destruction of GameObjects.",
@@ -48,6 +48,51 @@
                 "The game includes a war faction system: While it wasn't in the original plans, I decided to implement it. Initially, it had its flaws, as all enemies were considered enemies. However, with the use of enums and types, the enemy's faction will matter significantly, allowing an enemy from faction A to attack faction B. Enemies that act as allies of the player were even implemented.",
                 "Another detail I always considered was adding content: Since I'm developing this game alone, time is crucial. At first, it took me quite a while to implement a ship. However, this has been automated, as each ship has its own template of classes and components to fill with data and create the object. What used to take a week now only takes hours, allowing me to add more content quickly.",
                 "Implementing a persistence system was also something I had to address: I resorted to using JSON files, as they are much simpler and very easy to read and deserialize as data for the game. Currently, each ship has its own JSON file with its upgrade status and values ​​such as damage and movement speed, in addition to a player file. which determines its general progress (planets destroyed, at what difficulty it destroyed them, etc.)"
+            ]
+        },
+        "portfolio": {
+            "name": "Portfolio",
+            "shortDescription": "Web - Personal page",
+            "description": "This personal portfolio was developed to showcase my projects, experience, and technical skills. It was designed with a synthwave aesthetic and a scalable architecture that allows for adding new projects, languages, and content without modifying the application's core structure.",
+            "objetives": "The aim was to create a modern, maintainable, and fully scalable web application that serves as a professional presentation and as a platform for documenting development projects.",
+            "architecture": [
+                "Architecture based on Angular Standalone components.",
+                "Dynamic routing.",
+                "Reusable single page for any project.",
+                "Strongly typed models.",
+                "Separation of data, presentation, and logic.",
+                "Independent services for language and contact.",
+                "Decoupled configuration."
+            ],
+            "features": [
+                "Fully responsive design.",
+                "Synthwave visual theme.",
+                "Internationalization (Spanish/English).",
+                "Translation via JSON.",
+                "Dynamic routing system.",
+                "Reusable project page.",
+                "Contact form integrated with EmailJS.",
+                "GitHub and LinkedIn integration.",
+                "Animations and visual effects.",
+                "Reusable components.",
+                "Basic SEO.",
+                "Structure ready for adding new projects without modification."
+            ],
+            "learnings": [
+                "Design a reusable architecture for portfolios.",
+                "Implement internationalization using JSON files.",
+                "Create fully reusable components.",
+                "Organize information using typed models.",
+                "Deploy Angular applications in production with Vercel.",
+                "Integrate external services from the frontend.",
+                "Design responsive interfaces with a consistent visual identity."
+            ],
+            "challenges": [
+                "Design a single page capable of representing any project.",
+                "Maintain a structure ready to add new languages.",
+                "Integrate EmailJS without requiring a backend.",
+                "Achieve a synthwave aesthetic without compromising readability.",
+                "Maintain a clean architecture as the project grows."
             ]
         },
         "project-types": {

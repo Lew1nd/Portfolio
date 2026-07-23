@@ -17,21 +17,21 @@
             "description": "Juego arcade 2D inspirado en Asteroids. Controlaremos a un piloto de naves que será contratado por una corporación que tiene como objetivo destruir los planetas de La Federación: una corporación maligna que se apoderó de gran parte de los planetas. Para ello dispondremos de un gran arsenal de naves con habilidades y estilos de juego diferentes.",
             "objetives": "El objetivo era hacer un juego con jugabilidad arcade y rápida, con un sistema de movimiento y disparo simple y con el mismo objetivo (destruir el planeta) solo que escalando la dificultad a medida que el jugador avance. Además de ofrecer un sistema de progresión sencilla basada principalmente en la habilidad. Si bien la dificultad del juego es alta ya que no hay un concepto de puntos de vida - si la nave recibe un impacto muere-  esto le da al juego un estilo más agresivo.",
             "architecture": [
-                "Unity como motor de desarrollo",
-                "Arquitectura basada en componentes",
-                "Scriptable Objects",
-                "Object Pooling",
-                "Addressables",
-                "Dependency Injection",
-                "JSON como persistencia"
+                "Unity como motor de desarrollo.",
+                "Arquitectura basada en componentes.",
+                "Scriptable Objects.",
+                "Object Pooling.",
+                "Addressables.",
+                "Dependency Injection.",
+                "JSON como persistencia."
             ],
             "features": [
-                "Más de 10 naves con distintos estilos de juego y habilidades",
-                "Más de 10 planetas con habilidades únicas",
-                "Dificultad de juego escalable y progresiva",
-                "Sistema de progreso permanente y mejorable con uso de la currency del juego",
-                "Variedad de enemigos: asteroides, naves enemigas, satélites y jefes",
-                "Sistema de diálogo y lore"
+                "Más de 10 naves con distintos estilos de juego y habilidades.",
+                "Más de 10 planetas con habilidades únicas.",
+                "Dificultad de juego escalable y progresiva.",
+                "Sistema de progreso permanente y mejorable con uso de la currency del juego.",
+                "Variedad de enemigos: asteroides, naves enemigas, satélites y jefes.",
+                "Sistema de diálogo y lore."
             ],
             "learnings": [
                 "Comprendí la importancia del Object Pooling para mantener un rendimiento estable en juegos con una gran cantidad de enemigos y proyectiles simultáneos, reduciendo la creación y destrucción constante de GameObjects.",
@@ -48,6 +48,51 @@
                 "En el juego existe un sistema de guerra de facciones: si bien no estaba en los planes decidí implementarlo, al principio tenía sus defectos ya que todos los enemigos eran considerado como un enemigo. Sin embargo con el uso de enums y tipos importará mucho la facción del enemigo, pudiendo hacer que un enemigo de la facción A ataque a la B, incluso se implementaron enemigos que actuan como aliados del jugador.",
                 "Un detalle también que siempre consideré fue añadir contenido: como este juego lo estoy desarrollando solo es importante el tiempo, al principio tardaba bastante en implementar una nave. Sin embargo esto quedó automatizado ya que cada nave su plantilla de clases y componentes para rellenar con datos y crear el objeto, lo que antes tardaba una semana ahora solo tardo horas y esto me permite añadir más contenido en poco tiempo.",
                 "La implementación de un sistema de persistencia era algo que también tenía que tratar: recurrí al uso de archivos JSON ya que es bastante más simple y muy fácil de leer y deserializar como datos para el juego. Actualmente cada nave tiene su propio archivo JSON con su estado de mejora y valores como el daño y la velocidad de movimiento, además de un archivo de jugador que determina su progreso general (planetas destruidos, en qué dificultad lo destruyó, etc.)"
+            ]
+        },
+        "portfolio": {
+            "name": "Portfolio",
+            "shortDescription": "Web - Página personal",
+            "description": "Portfolio personal desarrollado para presentar mis proyectos, experiencia y habilidades técnicas. Fue diseñado con una estética synthwave y una arquitectura escalable que permite añadir nuevos proyectos, idiomas y contenido sin modificar la estructura principal de la aplicación.",
+            "objetives": "La finalidad era crear una aplicación web moderna, mantenible y completamente escalable que sirva como presentación profesional y como plataforma para documentar proyectos de desarrollo.",
+            "architecture": [
+                "Arquitectura basada en componentes Standalone de Angular.",
+                "Rutas dinámicas.",
+                "Página única reutilizable para cualquier proyecto.",
+                "Modelos fuertemente tipados.",
+                "Separación entre datos, presentación y lógica.",
+                "Servicios independientes para idioma y contacto.",
+                "Configuración desacoplada."
+            ],
+            "features": [
+                "Diseño completamente responsive.",
+                "Tema visual Synthwave.",
+                "Internacionalización (Español / Inglés).",
+                "Traducción mediante JSON.",
+                "Sistema de rutas dinámicas.",
+                "Página de proyecto reutilizable.",
+                "Formulario de contacto integrado con EmailJS.",
+                "Integración con GitHub y LinkedIn.",
+                "Animaciones y efectos visuales.",
+                "Componentes reutilizables.",
+                "SEO básico.",
+                "Estructura preparada para añadir nuevos proyectos sin modificar nada."
+            ],
+            "learnings": [
+                "Diseñar una arquitectura reutilizable para portfolios.",
+                "Implementar internacionalización utilizando archivos JSON.",
+                "Crear componentes completamente reutilizables.",
+                "Organizar la información mediante modelos tipados.",
+                "Desplegar aplicaciones Angular en producción con Vercel.",
+                "Integrar servicios externos desde el frontend.",
+                "Diseñar interfaces responsive con una identidad visual consistente."
+            ],
+            "challenges": [
+                "Diseñar una página única capaz de representar cualquier proyecto.",
+                "Mantener la estructura preparada para agregar nuevos idiomas.",
+                "Integrar EmailJS sin necesidad de un backend.",
+                "Conseguir una estética synthwave sin afectar la legibilidad.",
+                "Mantener una arquitectura limpia mientras el proyecto crecía."
             ]
         },
         "project-types": {
@@ -111,37 +156,31 @@
     },
     "contact": {
         "tittle": "Contacto",
-        "description":"¿Tenés una propuesta o quieres hacer una consulta? Elegí el medio que prefieras o completá el formulario.",
-        "contactInfo":"Información de contacto",
-        "location":"Ubicación",
-        "nameTittle":"Nombre",
-        "nameDescription":"Tu nombre",
-        "emailTittle":"Correo electrónico",
-        "emailDescription":"Correo",
-        "subjectTittle":"Asunto",
-        "subjectDescription":"Asunto",
-        "messageTittle":"Mensaje",
-        "messageDescription":"Escriba su mensaje...",
-        "buttonMessage":"Enviar mensaje",
+        "description": "¿Tenés una propuesta o quieres hacer una consulta? Elegí el medio que prefieras o completá el formulario.",
+        "contactInfo": "Información de contacto",
+        "location": "Ubicación",
+        "nameTittle": "Nombre",
+        "nameDescription": "Tu nombre",
+        "emailTittle": "Correo electrónico",
+        "emailDescription": "Correo",
+        "subjectTittle": "Asunto",
+        "subjectDescription": "Asunto",
+        "messageTittle": "Mensaje",
+        "messageDescription": "Escriba su mensaje...",
+        "buttonMessage": "Enviar mensaje",
         "sendingMessage": "Enviando...",
-
-        "successMessage":"Mensaje enviado correctamente.",
+        "successMessage": "Mensaje enviado correctamente.",
         "errorMessage": "No fue posible enviar el mensaje.",
-
-        "errorName1":"El nombre es obligatorio.",
-        "errorName2":"Debe contener al menos 4 caracteres.",
-        "errorName3":"Máximo 30 caracteres.",
-
-        "errorEmail1":"El correo es obligatorio.",
-        "errorEmail2":"Correo inválido.",
-
-        "errorSubject1":"El asunto es obligatorio.",
-        "errorSubject2":"Debe contener al menos 2 caracteres.",
-        "errorSubject3":"Máximo 45 caracteres.",
-
-        "errorMessage1":"El mensaje es obligatorio.",
-        "errorMessage2":"Debe contener al menos 5 caracteres.",
-        "errorMessage3":"Máximo 500 caracteres."
-
+        "errorName1": "El nombre es obligatorio.",
+        "errorName2": "Debe contener al menos 4 caracteres.",
+        "errorName3": "Máximo 30 caracteres.",
+        "errorEmail1": "El correo es obligatorio.",
+        "errorEmail2": "Correo inválido.",
+        "errorSubject1": "El asunto es obligatorio.",
+        "errorSubject2": "Debe contener al menos 2 caracteres.",
+        "errorSubject3": "Máximo 45 caracteres.",
+        "errorMessage1": "El mensaje es obligatorio.",
+        "errorMessage2": "Debe contener al menos 5 caracteres.",
+        "errorMessage3": "Máximo 500 caracteres."
     }
 }
