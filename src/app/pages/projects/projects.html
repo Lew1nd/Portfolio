@@ -124,7 +124,7 @@
 
             @for (capture of project.captures; track capture) {
 
-            <img [src]="capture" [alt]="project.name" (click)="openImage(capture)">
+            <img [src]="capture" [alt]="project.name" loading="lazy" decoding="async" (click)="openImage(capture)">
 
             }
 
@@ -172,7 +172,7 @@
 
         <h2>{{'projects.project-page.demo' | translate}}</h2>
 
-        <img class="project-banner" [src]="project.gif" [alt]="project.name + ' GIF'">
+        <img class="project-banner" [src]="project.gif" loading="lazy" decoding="async" [alt]="project.name + ' GIF'">
 
     </section>
 
@@ -193,9 +193,6 @@
 
         </div>
 
-
-
-
     </section>
 
     <!-- Aprendizajes -->
@@ -214,6 +211,13 @@
 
             }
         </div>
+    </section>
+
+    <!-- Estado del proyecto -->
+    <section>
+        <h2>{{ 'projects.project-page.projectStatus' | translate }}</h2>
+
+        <p> {{ 'projects.' + projectSlug + '.projectStatusResume' | translate }}</p>
     </section>
 
     <!-- Enlaces -->

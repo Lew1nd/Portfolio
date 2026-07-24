@@ -16,5 +16,13 @@ export const CARDS: ProjectCard[] = [
       image: 'images/projects/portfolio/logo.webp',
       status: 'in-progress',
       slug: 'portfolio',
+    },
+    {
+      id: 3,
+      name: 'Social Vortex',
+      type: 'academic',
+      image: 'images/projects/social-vortex/logo.webp',
+      status: 'archived',
+      slug: 'social-vortex',
     }
 ];

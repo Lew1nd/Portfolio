@@ -48,7 +48,8 @@
                 "The game includes a war faction system: While it wasn't in the original plans, I decided to implement it. Initially, it had its flaws, as all enemies were considered enemies. However, with the use of enums and types, the enemy's faction will matter significantly, allowing an enemy from faction A to attack faction B. Enemies that act as allies of the player were even implemented.",
                 "Another detail I always considered was adding content: Since I'm developing this game alone, time is crucial. At first, it took me quite a while to implement a ship. However, this has been automated, as each ship has its own template of classes and components to fill with data and create the object. What used to take a week now only takes hours, allowing me to add more content quickly.",
                 "Implementing a persistence system was also something I had to address: I resorted to using JSON files, as they are much simpler and very easy to read and deserialize as data for the game. Currently, each ship has its own JSON file with its upgrade status and values ​​such as damage and movement speed, in addition to a player file. which determines its general progress (planets destroyed, at what difficulty it destroyed them, etc.)"
-            ]
+            ],
+            "projectStatusResume": "The project is currently under development, with new content being added. My goal is for the final version to have 40 planets for story mode."
         },
         "portfolio": {
             "name": "Portfolio",
@@ -93,7 +94,65 @@
                 "Integrate EmailJS without requiring a backend.",
                 "Achieve a synthwave aesthetic without compromising readability.",
                 "Maintain a clean architecture as the project grows."
-            ]
+            ],
+            "projectStatusResume": "Although the portfolio is complete, it will be updated with the addition of new projects."
+        },
+        "social-vortex": {
+            "name": "Social Vortex",
+            "shortDescription": "Social network - Academic project",
+            "description": "A social platform developed with Angular and NestJS that allows users to register, publish content, interact through comments and reactions, and manage the platform through a system of roles and metrics.",
+            "objetives": "Develop a complete web application using a decoupled Frontend/Backend architecture, implementing authentication, data persistence, file storage, and administration tools.",
+            "architecture": [
+                "Frontend developed with Angular.",
+                "Backend developed with NestJS following a modular architecture.",
+                "REST API for client-server communication.",
+                "MongoDB as the NoSQL database.",
+                "Cloudinary for remote image storage.",
+                "JWT-based authentication.",
+                "Separation of presentation, business logic, and persistence.",
+                "Application prepared as a Progressive Web App (PWA)."
+            ],
+            "features": [
+                "Account Registration",
+                "Login",
+                "Authentication via JWT",
+                "Profile Management",
+                "Create Posts",
+                "Edit Posts",
+                "Delete Posts",
+                "View Posts",
+                "Upload Images",
+                "Like Posts",
+                "Comment on Posts",
+                "Role System",
+                "Administrative Panel",
+                "Disable Users",
+                "General Metrics",
+                "Progressive Web App",
+                "Custom Pipes",
+                "Custom Directives",
+                "REST API Consumption",
+                "Responsive Design"
+            ],
+            "learnings": [
+                "Design a decoupled full-stack application.",
+                "Implement secure authentication with JWT.",
+                "Organize a backend using modules in NestJS.",
+                "Integrate MongoDB with a REST API.",
+                "Manage remote storage using Cloudinary.",
+                "Implement role-based authorization.",
+                "Build a PWA.",
+                "Create custom pipes and directives in Angular.",
+                "Design an admin panel with metrics."
+            ],
+            "challenges": [
+                "Design a complete authentication flow between the frontend and backend.",
+                "Properly manage permissions based on user roles.",
+                "Synchronize the status of posts, comments, and reactions.",
+                "Integrate image uploads without storing files on the server.",
+                "Maintain a modular architecture that facilitates project growth."
+            ],
+            "projectStatusResume": "This project is retained for technical reference purposes. It has fulfilled its learning and development objectives, therefore no new functionalities or active maintenance are planned."
         },
         "project-types": {
             "personal": "Personal",
@@ -119,7 +178,8 @@
             "video": "Video",
             "demo": "Demo",
             "learning": "What I learned",
-            "links": "Links"
+            "links": "Links",
+            "projectStatus": "Project status"
         }
     },
     "aboutme": {

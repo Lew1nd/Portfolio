@@ -48,7 +48,8 @@
                 "En el juego existe un sistema de guerra de facciones: si bien no estaba en los planes decidí implementarlo, al principio tenía sus defectos ya que todos los enemigos eran considerado como un enemigo. Sin embargo con el uso de enums y tipos importará mucho la facción del enemigo, pudiendo hacer que un enemigo de la facción A ataque a la B, incluso se implementaron enemigos que actuan como aliados del jugador.",
                 "Un detalle también que siempre consideré fue añadir contenido: como este juego lo estoy desarrollando solo es importante el tiempo, al principio tardaba bastante en implementar una nave. Sin embargo esto quedó automatizado ya que cada nave su plantilla de clases y componentes para rellenar con datos y crear el objeto, lo que antes tardaba una semana ahora solo tardo horas y esto me permite añadir más contenido en poco tiempo.",
                 "La implementación de un sistema de persistencia era algo que también tenía que tratar: recurrí al uso de archivos JSON ya que es bastante más simple y muy fácil de leer y deserializar como datos para el juego. Actualmente cada nave tiene su propio archivo JSON con su estado de mejora y valores como el daño y la velocidad de movimiento, además de un archivo de jugador que determina su progreso general (planetas destruidos, en qué dificultad lo destruyó, etc.)"
-            ]
+            ],
+            "projectStatusResume": "El proyecto se encuentra en desarrollo, añadiendo nuevo contenido. Tengo como meta que la versión final tenga 40 planetas para el modo historia."
         },
         "portfolio": {
             "name": "Portfolio",
@@ -93,7 +94,65 @@
                 "Integrar EmailJS sin necesidad de un backend.",
                 "Conseguir una estética synthwave sin afectar la legibilidad.",
                 "Mantener una arquitectura limpia mientras el proyecto crecía."
-            ]
+            ],
+            "projectStatusResume": "El portfolio si bien está terminado, se irá actualizando con el agregado de nuevos proyectos."
+        },
+        "social-vortex": {
+            "name": "Social Vortex",
+            "shortDescription": "Red social - proyecto académico.",
+            "description": "Plataforma social desarrollada con Angular y NestJS que permite a los usuarios registrarse, publicar contenido, interactuar mediante comentarios y reacciones, y administrar la plataforma mediante un sistema de roles y métricas.",
+            "objetives": "Desarrollar una aplicación web completa utilizando una arquitectura Frontend/Backend desacoplada, implementando autenticación, persistencia de datos, almacenamiento de archivos y herramientas de administración.",
+            "architecture": [
+                "Frontend desarrollado con Angular.",
+                "Backend desarrollado con NestJS siguiendo una arquitectura modular.",
+                "API REST para la comunicación entre cliente y servidor",
+                "MongoDB como base de datos NoSQL.",
+                "Cloudinary para el almacenamiento remoto de imágenes.",
+                "Autenticación basada en JWT.",
+                "Separación entre presentación, lógica de negocio y persistencia.",
+                "Aplicación preparada como Progressive Web App (PWA)."
+            ],
+            "features": [
+                "Registro de cuentas.",
+                "Inicio de sesión.",
+                "Autenticación mediante JWT.",
+                "Gestión de perfil.",
+                "Crear publicaciones.",
+                "Editar publicaciones.",
+                "Eliminar publicaciones.",
+                "Visualizar publicaciones.",
+                "Subida de imágenes.",
+                "Dar Me gusta.",
+                "Comentar publicaciones.",
+                "Sistema de roles.",
+                "Panel administrativo.",
+                "Deshabilitación de usuarios.",
+                "Métricas generales.",
+                "Progressive Web App.",
+                "Pipes personalizados.",
+                "Directivas personalizadas.",
+                "Consumo de API REST.",
+                "Diseño responsive."
+            ],
+            "learnings": [
+                "Diseñar una aplicación full stack desacoplada.",
+                "Implementar autenticación segura con JWT.",
+                "Organizar un backend mediante módulos en NestJS.",
+                "Integrar MongoDB con una API REST.",
+                "Gestionar almacenamiento remoto mediante Cloudinary.",
+                "Implementar autorización basada en roles.",
+                "Construir una PWA.",
+                "Crear pipes y directivas personalizadas en Angular.",
+                "Diseñar un panel de administración con métricas."
+            ],
+            "challenges": [
+                "Diseñar un flujo completo de autenticación entre frontend y backend.",
+                "Gestionar correctamente los permisos según el rol del usuario.",
+                "Sincronizar el estado de publicaciones, comentarios y reacciones.",
+                "Integrar la subida de imágenes sin almacenar archivos en el servidor.",
+                "Mantener una arquitectura modular que facilitara el crecimiento del proyecto."
+            ],
+            "projectStatusResume": "Este proyecto se conserva como referencia técnica. Cumplió sus objetivos de aprendizaje y desarrollo, por lo que no se prevén nuevas funcionalidades ni mantenimiento activo."
         },
         "project-types": {
             "personal": "Personal",
@@ -119,7 +178,8 @@
             "video": "Video",
             "demo": "Demostración",
             "learning": "Lo que aprendí",
-            "links": "Enlaces"
+            "links": "Enlaces",
+            "projectStatus": "Estado del proyecto"
         }
     },
     "aboutme": {

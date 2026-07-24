@@ -8,8 +8,8 @@ export const PROJECTS: Project[] = [
         type: 'personal',
         status: 'in-progress',
         banner: 'images/projects/planet-breaker/logo.webp',
-        shortDescription: 'Juego de plataforma 2D',
-        description: 'Juego de plataforma 2D desarrollado en Unity con C#.',
+        shortDescription: '',
+        description: '',
         captures: [
             'images/projects/planet-breaker/1.webp',
             'images/projects/planet-breaker/2.webp',
@@ -24,7 +24,8 @@ export const PROJECTS: Project[] = [
         technologies: [
             'Unity',
             'C#',
-            'Git'
+            'Git',
+            'GitHub',
         ],
         challenges: [],
         architecture: [],
@@ -33,6 +34,7 @@ export const PROJECTS: Project[] = [
         demo: 'https://lewind-dev.itch.io/planet-breaker-game',
         features: [],
         learnings: [],
+        projectStatusResume: ''
     },
     {
         id: 2,
@@ -41,8 +43,8 @@ export const PROJECTS: Project[] = [
         type: 'personal',
         status: 'in-progress',
         banner: 'images/projects/portfolio/logo.webp',
-        shortDescription: 'Juego de plataforma 2D',
-        description: 'Juego de plataforma 2D desarrollado en Unity con C#.',
+        shortDescription: '',
+        description: '',
         captures: [
             'images/projects/portfolio/1.webp',
             'images/projects/portfolio/2.webp',
@@ -68,6 +70,48 @@ export const PROJECTS: Project[] = [
         github: '',
         features: [],
         learnings: [],
+        projectStatusResume: ''
+    },
+        {
+        id: 3,
+        slug: 'social-vortex',
+        name: 'Social Vortex',
+        type: 'academic',
+        status: 'archived',
+        banner: 'images/projects/social-vortex/logo.webp',
+        shortDescription: '',
+        description: '',
+        captures: [
+            'images/projects/social-vortex/1.webp',
+            'images/projects/social-vortex/2.webp',
+            'images/projects/social-vortex/3.webp',
+            'images/projects/social-vortex/4.webp',
+            'images/projects/social-vortex/5.webp',
+            'images/projects/social-vortex/6.webp',
+        ],
+        technologies: [
+            'Angular',
+            'Typescript',
+            'CSS',
+            'HTML',
+            'MongoDB',
+            'Vercel (frontend)',
+            'Railway (backend)',
+            'NestJS',
+            "NodeJS",
+            "JWT",
+            "Bcrypt",
+            "Cloudinary",
+            'Git',
+            'GitHub'
+        ],
+        challenges: [],
+        architecture: [],
+        objetive: '',
+        github: '',
+        features: [],
+        learnings: [],
+        projectStatusResume: ''
     },
 ];
 

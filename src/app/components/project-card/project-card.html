@@ -1,6 +1,6 @@
 <div class="project-card" [routerLink]="['/projects', project.slug]">
 
-    <img [src]="project.image" [alt]="project.name">
+    <img [src]="project.image" [alt]="project.name" loading="lazy" decoding="async">
 
     <div class="project-info">
 

@@ -31,6 +31,7 @@ export interface Project {
     features: string[];
     learnings: string[];
     challenges: string[]; 
+    projectStatusResume: string;
 
     // Fechas
     startDate?: Date;
