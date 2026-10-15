@@ -1,0 +1,24 @@
+<div class="tech-grid">
+  @for (tech of technologies(); track tech.name) {
+    <button
+      type="button"
+      class="tech-item"
+      [class.selected]="selectedTech() === tech.name"
+      [attr.aria-pressed]="selectedTech() === tech.name"
+      (click)="selectTech(tech.name)"
+    >
+      <img
+        class="tech-icon"
+        [src]="tech.image"
+        [alt]="tech.name"
+        loading="lazy"
+      />
+
+      @if (selectedTech() === tech.name) {
+        <span class="tech-name">
+          {{ tech.name }}
+        </span>
+      }
+    </button>
+  }
+</div>

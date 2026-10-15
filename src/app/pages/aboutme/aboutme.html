@@ -41,109 +41,29 @@
 
         <h2>{{'aboutme.technologies' | translate}}</h2>
 
-        <div class="tech-category">
-            <h3 class="tech-tittle">Frontend</h3>
+        <h3 class="tech-tittle">Frontend</h3>
+        <app-tech-icon [technologies]="frontend"/>
 
-            <div class="tech-grid">
+        <h3 class="tech-tittle">Backend</h3>
+        <app-tech-icon [technologies]="backend"/>
 
-                <div class="tech-item">Angular</div>
-                <div class="tech-item">CSS</div>
-                <div class="tech-item">HTML</div>
+        <h3 class="tech-tittle">Databases</h3>
+        <app-tech-icon [technologies]="database"/>
 
-            </div>
-        </div>
+        <h3 class="tech-tittle">Cloud & deployment</h3>
+        <app-tech-icon [technologies]="cloudAndDeploy"/>
 
-        <div class="tech-category">
-            <h3 class="tech-tittle">Backend</h3>
+        <h3 class="tech-tittle">Game development</h3>
+        <app-tech-icon [technologies]="gameDevelopment"/>
 
-            <div class="tech-grid">
+        <h3 class="tech-tittle">Languages</h3>
+        <app-tech-icon [technologies]="languages"/>
 
-                <div class="tech-item">.NET</div>
-                <div class="tech-item">Express.js</div>
-                <div class="tech-item">Nest.js</div>
-                <div class="tech-item">Node.js</div>
-                <div class="tech-item">EJS</div>
+        <h3 class="tech-tittle">Design</h3>
+        <app-tech-icon [technologies]="designs"/>
 
-            </div>
-        </div>
-
-        <div class="tech-category">
-            <h3 class="tech-tittle">Databases</h3>
-
-            <div class="tech-grid">
-
-                <div class="tech-item">Supabase</div>
-                <div class="tech-item">MongoDB</div>
-                <div class="tech-item">SQLite</div>
-                <div class="tech-item">MySQL</div>
-
-            </div>
-        </div>
-
-        <div class="tech-category">
-            <h3 class="tech-tittle">Cloud & deployment</h3>
-
-            <div class="tech-grid">
-
-                <div class="tech-item">Vercel</div>
-                <div class="tech-item">Render</div>
-                <div class="tech-item">Railway</div>
-
-            </div>
-        </div>
-
-        <div class="tech-category">
-            <h3 class="tech-tittle">Game development</h3>
-
-            <div class="tech-grid">
-
-                <div class="tech-item">Unity</div>
-
-            </div>
-        </div>
-
-        <div class="tech-category">
-            <h3 class="tech-tittle">Languages</h3>
-
-            <div class="tech-grid">
-
-                <div class="tech-item">Python</div>
-                <div class="tech-item">C#</div>
-                <div class="tech-item">C++</div>
-                <div class="tech-item">Javascript</div>
-                <div class="tech-item">Java</div>
-
-            </div>
-        </div>
-
-        <div class="tech-category">
-            <h3 class="tech-tittle">Design</h3>
-
-            <div class="tech-grid">
-
-                <div class="tech-item">Canva</div>
-                <div class="tech-item">Abode Photoshop</div>
-                <div class="tech-item">Inkscape</div>
-
-            </div>
-        </div>
-
-        <div class="tech-category">
-            <h3 class="tech-tittle">Herramientas</h3>
-
-            <div class="tech-grid">
-
-                <div class="tech-item">Postman</div>
-                <div class="tech-item">Trello</div>
-                <div class="tech-item">Git</div>
-                <div class="tech-item">Github</div>
-                <div class="tech-item">Vagrant</div>
-                <div class="tech-item">NPM</div>
-                <div class="tech-item">Nginx</div>
-                <div class="tech-item">Obsidian</div>
-
-            </div>
-        </div>
+        <h3 class="tech-tittle">Tools</h3>
+        <app-tech-icon [technologies]="tools"/>
 
     </section>
 

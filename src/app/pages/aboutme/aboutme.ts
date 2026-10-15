@@ -1,15 +1,26 @@
 import { Component, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { TranslationService } from '../../services/translation-service';
+import { frontendTechnology, backendTechnology, databases, cloudAndDeploy, gameDevelopment, languages, designs, tools } from '../../models/technologies-model';
+import { TechIcon } from '../../components/tech-icon/tech-icon';
 
 @Component({
   selector: 'app-aboutme',
-  imports: [TranslatePipe],
+  imports: [TranslatePipe, TechIcon],
   templateUrl: './aboutme.html',
   styleUrl: './aboutme.css',
 })
 export class Aboutme {
-private translation = inject(TranslationService);
+  private translation = inject(TranslationService);
+
+  frontend = frontendTechnology;
+  backend = backendTechnology;
+  database = databases;
+  cloudAndDeploy = cloudAndDeploy;
+  gameDevelopment = gameDevelopment;
+  languages = languages;
+  designs = designs;
+  tools = tools;
 
   philosophies: string[] = [];
   iLikes: string[] = [];
