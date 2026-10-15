@@ -18,8 +18,8 @@ export interface Project {
     video?: string;
     gif?: string;
 
-    // Tecnologías
-    technologies: string[];
+    // Stack utilizado
+    stack: string[];
 
     // Enlaces
     github?: string;

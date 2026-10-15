@@ -3,58 +3,215 @@ export interface Technology {
     image: string;
 }
 
-export const frontendTechnology: Technology[] = [
-    { name: 'Angular', image: 'images/technologies/angular.webp'},
-    { name: 'Html5', image: 'images/technologies/html5.webp'},
-    { name: 'Css3', image: 'images/technologies/css3.webp'},
-]
+export type TechnologyId = keyof typeof TECHNOLOGIES;
 
-export const backendTechnology: Technology[] = [
-    { name: '.net', image: 'images/technologies/dotnetcore.webp'},
-    { name: 'Nodejs', image: 'images/technologies/nodejs.webp'},
-    { name: 'Expressjs', image: 'images/technologies/express.webp'},
-    { name: 'Nestjs', image: 'images/technologies/nestjs.webp'},
-    { name: 'Ejs', image: 'images/technologies/ejs.webp'},
-]
+export const TECHNOLOGIES: Record<string, Technology> = {
+  unity: {
+    name: 'Unity',
+    image: 'images/technologies/unity.webp'
+  },
+  csharp: {
+    name: 'C#',
+    image: 'images/technologies/csharp.webp'
+  },
+  git: {
+    name: 'Git',
+    image: 'images/technologies/git.webp'
+  },
+  github: {
+    name: 'GitHub',
+    image: 'images/technologies/github.webp'
+  },
+  angular: {
+    name: 'Angular',
+    image: 'images/technologies/angular.webp'
+  },
+  html5: {
+    name: 'HTML5',
+    image: 'images/technologies/html5.webp'
+  },
+  css3: {
+    name: 'CSS3',
+    image: 'images/technologies/css3.webp'
+  },
+  dotnet: {
+    name: '.Net',
+    image: 'images/technologies/dotnetcore.webp'
+  },
+  nodejs: {
+    name: 'Nodejs',
+    image: 'images/technologies/nodejs.webp'
+  },
+  expressjs: {
+    name: 'Expressjs',
+    image: 'images/technologies/express.webp'
+  },
+  nestjs: {
+    name: 'Nestjs',
+    image: 'images/technologies/nestjs.webp'
+  },
+  ejs: {
+     name: 'Ejs',
+     image: 'images/technologies/ejs.webp' 
+  },
+  mongodb: {
+    name: 'Mongodb',
+    image: 'images/technologies/mongodb.webp'
+  },
+  supabase: {
+    name: 'Supabase',
+    image: 'images/technologies/supabase.webp'
+  },
+  sqlserver: {
+    name: 'Sqlserver',
+    image: 'images/technologies/microsoftsqlserver.webp'
+  },
+  mysql: {
+    name: 'Mysql',
+    image: 'images/technologies/mysql.webp'
+  },
+  vercel: {
+    name: 'Vercel',
+    image: 'images/technologies/vercel.webp'
+  },
+  railway: {
+    name: 'Railway',
+    image: 'images/technologies/railway.webp'
+  },
+  render: {
+    name: 'Render',
+    image: 'images/technologies/render.webp'
+  },
+  typescript: {
+    name: 'Typescript',
+    image: 'images/technologies/typescript.webp'  
+  },
+  cplusplus: {
+    name: 'C++',
+    image: 'images/technologies/cplusplus.webp'
+  },
+  javascript: {
+    name: 'Javascript',
+    image: 'images/technologies/javascript.webp'
+  },
+  python: {
+    name: 'Python',
+    image: 'images/technologies/python.webp'
+  },
+  canva: {
+    name: 'Canva',
+    image: 'images/technologies/canva.webp'
+  },
+  inkscape: {
+    name: 'Inkscape',
+    image: 'images/technologies/inkscape.webp'
+  },
+  photoshop: {
+    name: 'Photoshop',
+    image: 'images/technologies/photoshop.webp'
+  },
+  postman: {
+    name: 'Postman',
+    image: 'images/technologies/postman.webp'
+  },
+  npm: {
+    name: 'Npm',
+    image: 'images/technologies/npm.webp'
+  },
+  vagrant: {
+    name: 'Vagrant',
+    image: 'images/technologies/vagrant.webp'
+  },
+  nginx: {
+    name: 'Nginx',
+    image: 'images/technologies/nginx.webp'
+  },
+  obsidian: {
+    name: 'Obsidian',
+    image: 'images/technologies/obsidian.webp'
+  },
+  trello: {
+    name: 'Trello',
+    image: 'images/technologies/trello.webp'
+  },
+  emailjs: {
+    name: 'Emailjs',
+    image: 'images/technologies/emailjs.webp'
+  },
+  jwt: {
+    name: 'Jwt',
+    image: 'images/technologies/jwt.webp'
+  },
+  cloudinary: {
+    name: 'Cloudinary',
+    image: 'images/technologies/cloudinary.webp'
+  },
+  java: {
+    name: 'Java',
+    image: 'images/technologies/java.webp'
+  },
+  bcrypt: {
+    name: 'Bcrypt',
+    image: 'images/technologies/bcrypt.webp'
+  }
+} satisfies Record<string, Technology>;
 
-export const databases: Technology[] = [
-   { name: 'Mongodb', image: 'images/technologies/mongodb.webp'},
-   { name: 'Mysql', image: 'images/technologies/mysql.webp'},
-   { name: 'Supabase', image: 'images/technologies/supabase.webp'},
-   { name: 'Sqlserver', image: 'images/technologies/microsoftsqlserver.webp'},
-]
-
-export const cloudAndDeploy: Technology[] = [
-   { name: 'Vercel', image: 'images/technologies/vercel.webp'},
-   { name: 'Render', image: 'images/technologies/render.webp'},
-   { name: 'Railway', image: 'images/technologies/railway.webp'},
-]
-
-export const gameDevelopment: Technology[] = [
-    { name: 'Unity', image: 'images/technologies/unity.webp'},
-]
-
-export const languages: Technology[] = [
-   { name: 'Typescript', image: 'images/technologies/typescript.webp'},
-   { name: 'Csharp', image: 'images/technologies/csharp.webp'},
-   { name: 'Cplusplus', image: 'images/technologies/cplusplus.webp'},
-   { name: 'Javascript', image: 'images/technologies/javascript.webp'},
-   { name: 'Python', image: 'images/technologies/python.webp'},
-]
-
-export const designs: Technology[] = [
-   { name: 'Canva', image: 'images/technologies/canva.webp'},
-   { name: 'Inkscape', image: 'images/technologies/inkscape.webp'},
-   { name: 'Photoshop', image: 'images/technologies/photoshop.webp'},
-]
-
-export const tools: Technology[] = [
-   { name: 'Postman', image: 'images/technologies/postman.webp'},
-   { name: 'Git', image: 'images/technologies/git.webp'},
-   { name: 'Github', image: 'images/technologies/github.webp'},
-   { name: 'Vagrant', image: 'images/technologies/vagrant.webp'},
-   { name: 'Nginx', image: 'images/technologies/nginx.webp'},
-   { name: 'Obsidian', image: 'images/technologies/obsidian.webp'},
-   { name: 'Trello', image: 'images/technologies/trello.webp'},
-   { name: 'Npm', image: 'images/technologies/npm.webp'},
-]
+export const TECHNOLOGY_CATEGORIES = {
+  frontend: [
+    'angular',
+    'html5',
+    'css3'
+  ],
+  gameDevelopment: [
+    'unity'
+  ],
+  backend: [
+    'dotnet',
+    'nodejs',
+    'expressjs',
+    'nestjs',
+    'ejs'
+  ],
+  databases: [
+    'mongodb',
+    'sqlserver',
+    'mysql'
+  ],
+  cloudAndDeploy: [
+    'vercel',
+    'railway',
+    'render'
+  ],
+  tools: [
+    'git',
+    'github',
+    'npm',
+    'vagrant',
+    'nginx',
+    'obsidian',
+    'trello',
+    'postman',
+    'jwt'
+  ],
+  languages: [
+    'typescript',
+    'cplusplus',
+    'javascript',
+    'python',
+    'csharp',
+    'java',
+  ],
+  designs: [
+    'canva',
+    'inkscape',
+    'photoshop',
+  ],
+  services: [
+    'emailjs',
+    'cloudinary',
+  ],
+  security: [
+   'bcrypt',
+   'jwt',
+  ]
+} as const satisfies Record<string, TechnologyId[]>;

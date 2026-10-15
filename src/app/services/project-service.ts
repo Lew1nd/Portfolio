@@ -22,10 +22,8 @@ export class ProjectService {
     return PROJECTS;
   }
 
-  getBySlug(slug: string | any): Project | undefined {
-
+  getBySlug(slug: string): Project | undefined {
     return this.PROJECTS.find(p => p.slug === slug);
-
   }
 
   // ---------------- Proyecto ----------------------

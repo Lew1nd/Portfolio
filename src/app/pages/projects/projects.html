@@ -1,4 +1,4 @@
-@if (project) {
+@if(project(); as currentProject) {
 
 <div class="project-page">
 
@@ -6,7 +6,7 @@
     <section class="project-header">
 
         <h1 class="project-title">
-            {{ project.name }}
+            {{ currentProject.name }}
         </h1>
 
         <h3 class="project-subtitle"> {{ 'projects.' + projectSlug + '.shortDescription' | translate }}</h3>
@@ -14,28 +14,28 @@
         <div class="project-meta">
 
             <span class="chip">
-                🗂️ {{ 'projects.project-types.' + project.type | translate }}
+                🗂️ {{ 'projects.project-types.' + currentProject.type | translate }}
             </span>
 
             <span class="chip">
-                🚧 {{ 'projects.project-status.' + project.status | translate }}
+                🚧 {{ 'projects.project-status.' + currentProject.status | translate }}
             </span>
 
-            @if (project.startDate) {
+            @if (currentProject.startDate) {
             <span class="chip">
-                📅 {{ project.startDate }}
+                📅 {{ currentProject.startDate }}
             </span>
             }
 
-            @if (project.endDate) {
+            @if (currentProject.endDate) {
             <span class="chip">
-                📅 {{ project.endDate }}
+                📅 {{ currentProject.endDate }}
             </span>
             }
 
         </div>
 
-        <img class="project-banner" [src]="project.banner" [alt]="project.name">
+        <img class="project-banner" [src]="currentProject.banner" [alt]="currentProject.name">
 
     </section>
 
@@ -75,21 +75,10 @@
 
     <!-- Tecnologías -->
     <section>
-
         <h2>{{'projects.project-page.technologies' | translate}}</h2>
-
-        <div class="tech-grid">
-
-            @for (tech of project.technologies; track tech) {
-
-            <span class="tech">
-                {{ tech }}
-            </span>
-
-            }
-
-        </div>
-
+        @if (project(); as currentProject) {
+        <app-tech-icon [technologies]="projectTechnologies()"/>
+        }
     </section>
 
     <!-- Características -->
@@ -114,7 +103,7 @@
     </section>
 
     <!-- Galería -->
-    @if (project.captures.length > 0) {
+    @if (currentProject.captures.length > 0) {
 
     <section>
 
@@ -122,9 +111,9 @@
 
         <div class="gallery">
 
-            @for (capture of project.captures; track capture) {
+            @for (capture of currentProject.captures; track capture) {
 
-            <img [src]="capture" [alt]="project.name" loading="lazy" decoding="async" (click)="openImage(capture)">
+            <img [src]="capture" [alt]="currentProject.name" loading="lazy" decoding="async" (click)="openImage(capture)">
 
             }
 
@@ -145,7 +134,7 @@
     }
 
     <!-- Video -->
-    @if (project.video) {
+    @if (currentProject.video) {
 
     <section>
 
@@ -153,7 +142,7 @@
 
         <div class="links">
 
-            <a class="project-button" [href]="project.video" target="_blank" rel="noopener noreferrer">
+            <a class="project-button" [href]="currentProject.video" target="_blank" rel="noopener noreferrer">
 
                 🎥 {{ 'projects.project-page.watch-video' | translate }}
 
@@ -166,18 +155,17 @@
     }
 
     <!-- GIF -->
-    @if (project.gif) {
+    @if (currentProject.gif) {
 
     <section>
 
         <h2>{{'projects.project-page.demo' | translate}}</h2>
 
-        <img class="project-banner" [src]="project.gif" loading="lazy" decoding="async" [alt]="project.name + ' GIF'">
+        <img class="project-banner" [src]="currentProject.gif" loading="lazy" decoding="async" [alt]="currentProject.name + ' GIF'">
 
     </section>
 
     }
-
     <!-- Desafíos -->
     <section>
         <h2>{{'projects.project-page.challenges' | translate}}</h2>
@@ -221,7 +209,9 @@
     </section>
 
     <!-- Enlaces -->
-    @if (project.github || project.demo) {
+
+
+    @if (currentProject.github || currentProject.demo) {
 
     <section>
 
@@ -229,9 +219,9 @@
 
         <div class="links">
 
-            @if (project.github) {
+            @if (currentProject.github) {
 
-            <a class="project-button" [href]="project.github" target="_blank">
+            <a class="project-button" [href]="currentProject.github" target="_blank">
 
                 GitHub
 
@@ -239,9 +229,9 @@
 
             }
 
-            @if (project.demo) {
+            @if (currentProject.demo) {
 
-            <a class="project-button" [href]="project.demo" target="_blank">
+            <a class="project-button" [href]="currentProject.demo" target="_blank">
 
                 Demo
 

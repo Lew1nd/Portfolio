@@ -1,21 +1,24 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal, computed } from '@angular/core';
 import { ProjectService } from '../../services/project-service';
 import { Project } from '../../models/project-model';
 import { ActivatedRoute } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { TranslationService } from '../../services/translation-service';
+import { TECHNOLOGIES } from '../../models/technologies-model';
+import { TechIcon } from '../../components/tech-icon/tech-icon';
 
 @Component({
   selector: 'app-projects',
-  imports: [TranslatePipe],
+  imports: [TranslatePipe, TechIcon],
   templateUrl: './projects.html',
   styleUrl: './projects.css',
 })
 export class Projects {
   private translation = inject(TranslationService);
+  private route = inject(ActivatedRoute);
+  private projectService = inject(ProjectService);
 
-  project?: Project;
-
+  project = signal<Project | undefined>(undefined);
   projectSlug: string = '';
 
   features: string[] = [];
@@ -25,30 +28,36 @@ export class Projects {
 
   selectedImage: string | null = null;
 
-  constructor(
-    private route: ActivatedRoute,
-    private projectService: ProjectService
-  ) {
+  projectTechnologies = computed(() => {
+    const project = this.project();
 
+    if (!project) return [];
+
+    return project.stack.map(id => TECHNOLOGIES[id]);
+  });
+
+  constructor() {
     this.route.paramMap.subscribe(params => {
-
       const slug = params.get('slug');
 
-      if (!slug) return;
+      if (!slug) {
+        this.project.set(undefined);
+        return;
+      }
 
-      this.project = this.projectService.getBySlug(slug);
       this.projectSlug = slug;
 
-    });
+      const project = this.projectService.getBySlug(slug);
 
-    //-----
-    this.translation.translateContent(`projects.${this.projectSlug}`).subscribe(project => {
-      this.features = project.features;
-      this.learnings = project.learnings;
-      this.challenges = project.challenges;
-      this.architecture = project.architecture;
-    });
+      this.project.set(project);
 
+      this.translation.translateContent(`projects.${slug}`).subscribe(projectContent => {
+        this.features = projectContent.features;
+        this.learnings = projectContent.learnings;
+        this.challenges = projectContent.challenges;
+        this.architecture = projectContent.architecture;
+      });
+    });
   }
 
   //--------- IMAGEN -----------

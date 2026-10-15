@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { TranslationService } from '../../services/translation-service';
-import { frontendTechnology, backendTechnology, databases, cloudAndDeploy, gameDevelopment, languages, designs, tools } from '../../models/technologies-model';
+import { TECHNOLOGIES, TECHNOLOGY_CATEGORIES } from '../../models/technologies-model';
 import { TechIcon } from '../../components/tech-icon/tech-icon';
 
 @Component({
@@ -13,14 +13,15 @@ import { TechIcon } from '../../components/tech-icon/tech-icon';
 export class Aboutme {
   private translation = inject(TranslationService);
 
-  frontend = frontendTechnology;
-  backend = backendTechnology;
-  database = databases;
-  cloudAndDeploy = cloudAndDeploy;
-  gameDevelopment = gameDevelopment;
-  languages = languages;
-  designs = designs;
-  tools = tools;
+  frontend = TECHNOLOGY_CATEGORIES.frontend.map(id => TECHNOLOGIES[id]);
+  backend = TECHNOLOGY_CATEGORIES.backend.map(id => TECHNOLOGIES[id]);
+  database = TECHNOLOGY_CATEGORIES.databases.map(id => TECHNOLOGIES[id]);
+  cloudAndDeploy = TECHNOLOGY_CATEGORIES.cloudAndDeploy.map(id => TECHNOLOGIES[id]);
+  gameDevelopment = TECHNOLOGY_CATEGORIES.gameDevelopment.map(id => TECHNOLOGIES[id]);
+  languages = TECHNOLOGY_CATEGORIES.languages.map(id => TECHNOLOGIES[id]);
+  designs = TECHNOLOGY_CATEGORIES.designs.map(id => TECHNOLOGIES[id]);
+  tools = TECHNOLOGY_CATEGORIES.tools.map(id => TECHNOLOGIES[id]);
+  services = TECHNOLOGY_CATEGORIES.services.map(id => TECHNOLOGIES[id]);
 
   philosophies: string[] = [];
   iLikes: string[] = [];
