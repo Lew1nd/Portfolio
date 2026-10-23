@@ -28,15 +28,14 @@ a {
 /*LETRAS*/
 
 .synth-text {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    margin: 0;
 
-    font-size: 6rem;
+    font-size: clamp(2.5rem, 8vw, 5rem);
     font-weight: 900;
-    letter-spacing: .6rem;
+    letter-spacing: clamp(.15rem, 1.5vw, .6rem);
     text-transform: uppercase;
+    text-align: center;
 
     color: rgba(255, 0, 180, 0.08);
 

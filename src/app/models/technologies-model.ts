@@ -156,6 +156,8 @@ export const TECHNOLOGIES: Record<string, Technology> = {
   }
 } satisfies Record<string, Technology>;
 
+//----------------------------------------------------------------------------------
+
 export const TECHNOLOGY_CATEGORIES = {
   frontend: [
     'angular',

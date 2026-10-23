@@ -22,8 +22,7 @@
 
     border: 1px solid rgba(255,0,170,.25);
 
-    box-shadow:
-        0 0 30px rgba(255,0,170,.15);
+    box-shadow: 0 0 30px rgba(255,0,170,.15);
 }
 
 .project-header {
@@ -232,7 +231,7 @@
 
     .project-banner{
 
-        height:220px;
+        height:90%;
     }
 
     .gallery{
