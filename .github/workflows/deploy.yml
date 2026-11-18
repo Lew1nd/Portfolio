@@ -34,7 +34,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular
-        run: npm run build -- --configuration production --base-href /lewind-portfolio/
+        run: npm run build -- --configuration production --base-href /Portfolio/
 
       - name: Prepare static files
         run: |
