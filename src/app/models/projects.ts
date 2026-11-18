@@ -60,7 +60,6 @@ export const PROJECTS: Project[] = [
             'css3',
             'html5',
             'emailjs',
-            'vercel',
             'git',
             'github'
         ],
