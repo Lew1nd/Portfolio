@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "portfolio-front": {
+    "Portfolio": {
       "projectType": "application",
       "schematics": {},
       "root": "",
