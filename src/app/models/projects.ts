@@ -66,7 +66,7 @@ export const PROJECTS: Project[] = [
         challenges: [],
         architecture: [],
         objetive: '',
-        github: '',
+        github: 'https://github.com/Lew1nd/Portfolio',
         features: [],
         learnings: [],
         projectStatusResume: ''
