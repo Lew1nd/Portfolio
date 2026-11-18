@@ -60,14 +60,13 @@ export const PROJECTS: Project[] = [
             'css3',
             'html5',
             'emailjs',
-            'vercel',
             'git',
             'github'
         ],
         challenges: [],
         architecture: [],
         objetive: '',
-        github: '',
+        github: 'https://github.com/Lew1nd/Portfolio',
         features: [],
         learnings: [],
         projectStatusResume: ''
