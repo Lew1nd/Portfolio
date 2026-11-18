@@ -1,6 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EmailService } from '../../services/email-service';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { NonNullableFormBuilder, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslatePipe } from '@ngx-translate/core';
 
@@ -17,6 +18,12 @@ export class Contact {
   loading = signal(false);
   status = signal<'idle' | 'success' | 'error'>('idle');
 
+  constructor() {
+    this.contactForm.valueChanges
+      .pipe(takeUntilDestroyed())
+      .subscribe(() => this.status.set('idle'));
+  }
+
   contactForm = this.fb.group({
     name: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(30)]],
     email: ['', [Validators.required, Validators.email]],
@@ -24,25 +31,35 @@ export class Contact {
     message: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(500)]],
   });
 
-  async send() {
-    if (this.loading()) return;
-    if (this.contactForm.invalid) return;
+  async send(): Promise<void> {
+    if (this.loading() || this.contactForm.invalid) {
+      this.contactForm.markAllAsTouched();
+      return;
+    }
 
     this.loading.set(true);
-    this.status.set('success');
+    this.status.set('idle');
+
     try {
-      const response = await this.emailService.send(this.contactForm.getRawValue());
-      this.contactForm.reset();
+      await this.emailService.send(this.contactForm.getRawValue());
 
-    }
-    catch (err) {
+      this.contactForm.reset(
+        {
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        },
+        { emitEvent: false }
+      );
+
+      this.status.set('success');
+    } catch (error: unknown) {
       this.status.set('error');
-      console.log(err);
-    }
-    finally {
+      console.error('Failed to send contact message:', error);
+    } finally {
       this.loading.set(false);
-      this.contactForm.valueChanges.subscribe(() => { this.status.set('idle'); });
     }
-
   }
+
 }
