@@ -1,59 +1,110 @@
-# PortfolioFront
+# Lew1nd — Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+![Portfolio Logo](./public/images/projects/portfolio/logo.webp)
 
-## Development server
+Personal portfolio built with **Angular and TypeScript**, showcasing my projects, technical skills, and software development experience.
 
-To start a local development server, run:
+**[Live Demo](https://lew1nd.github.io/Portfolio/)** · **[GitHub Repository](https://github.com/Lew1nd/Portfolio)**
 
-```bash
-ng serve
-```
+## Preview
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Explore the portfolio interface and its visual design.
 
-## Code scaffolding
+![Portfolio Home](./public/images/projects/portfolio/1.webp)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+![Portfolio Preview 2](./public/images/projects/portfolio/2.webp)
 
-```bash
-ng generate component component-name
-```
+![Portfolio Preview 3](./public/images/projects/portfolio/3.webp)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+![Portfolio Preview 4](./public/images/projects/portfolio/4.webp)
 
-```bash
-ng generate --help
-```
+![Portfolio Preview 5](./public/images/projects/portfolio/5.webp)
 
-## Building
+## Tech Stack
 
-To build the project run:
+- **Framework:** Angular 21
+- **Language:** TypeScript
+- **Frontend:** HTML5, CSS3
+- **Internationalization:** ngx-translate
+- **Icons:** Bootstrap Icons
+- **Contact Form:** EmailJS
+- **Reactive Programming:** RxJS
+- **Testing:** Vitest
+- **Code Formatting:** Prettier
+- **Deployment:** GitHub Pages
+- **CI/CD:** GitHub Actions
+- **Version Control:** Git, GitHub
 
-```bash
-ng build
-```
+## Features
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Responsive interface for desktop and mobile devices.
+- Project showcase with dedicated visual previews.
+- Multilingual support using ngx-translate.
+- Contact form integration with EmailJS.
+- Angular routing for navigation between sections.
+- Automated deployment to GitHub Pages using GitHub Actions.
 
-## Running unit tests
+## Getting Started
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+### Prerequisites
 
-```bash
-ng test
-```
+- Node.js compatible with Angular 21.
+- npm.
 
-## Running end-to-end tests
+### Installation
 
-For end-to-end (e2e) testing, run:
+1. Clone the repository:
 
-```bash
-ng e2e
-```
+   ```bash
+   git clone https://github.com/Lew1nd/Portfolio.git
+   ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+2. Navigate to the project directory:
 
-## Additional Resources
+   ```bash
+   cd Portfolio
+   ```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+5. Open the local URL displayed in the terminal, usually `http://localhost:4200/`.
+
+### Available Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm start` | Starts the Angular development server. |
+| `npm run build` | Builds the application for production. |
+| `npm run watch` | Rebuilds the application when files change, using the development configuration. |
+| `npm test` | Runs the project's test suite. |
+
+## Deployment
+
+The portfolio is hosted on **GitHub Pages**.
+
+The project uses GitHub Actions to build the Angular application and deploy the generated static files.
+
+Visit the deployed application:
+
+**[https://lew1nd.github.io/Portfolio/](https://lew1nd.github.io/Portfolio/)**
+
+Feel free to explore my portfolio and get in touch through the contact form.
+
+---
+
+## License
+
+All rights reserved. This project is not open source.
+Unauthorized copying, modification, distribution, or reuse of this code is prohibited.
+
+Developed by **Lew1nd**.
