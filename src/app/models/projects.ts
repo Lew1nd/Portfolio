@@ -86,7 +86,6 @@ export const PROJECTS: Project[] = [
             'images/projects/social-vortex/3.webp',
             'images/projects/social-vortex/4.webp',
             'images/projects/social-vortex/5.webp',
-            'images/projects/social-vortex/6.webp',
         ],
         stack: [
             'angular',
