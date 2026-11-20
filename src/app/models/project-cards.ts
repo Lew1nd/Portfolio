@@ -24,5 +24,13 @@ export const CARDS: ProjectCard[] = [
       image: 'images/projects/social-vortex/logo.webp',
       status: 'archived',
       slug: 'social-vortex',
+    },
+    {
+      id: 4,
+      name: 'Desarrollo Gourmet',
+      type: 'academic',
+      image: 'images/technologies/ionic.webp',
+      status: 'finished',
+      slug: 'desarrollogourmet',
     }
 ];

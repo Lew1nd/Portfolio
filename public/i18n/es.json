@@ -154,6 +154,60 @@
             ],
             "projectStatusResume": "Este proyecto se conserva como referencia técnica. Cumplió sus objetivos de aprendizaje y desarrollo, por lo que no se prevén nuevas funcionalidades ni mantenimiento activo."
         },
+        "desarrollogourmet": {
+            "name": "Desarrollo Gourmet",
+            "shortDescription": "Aplicación de restaurante móvil",
+            "description": "Desarrollo Gourmet es una aplicación móvil concebida para centralizar y optimizar los procesos operativos de un restaurante. El sistema contempla diferentes perfiles de usuario y proporciona interfaces específicas para clientes, mozos, personal de cocina, cantineros y responsables de gestión. La aplicación integra la gestión del menú y sus productos con un flujo de pedidos que permite realizar un seguimiento de su estado durante las distintas etapas de preparación. La actualización de los estados contempla la participación de varios sectores, evitando marcar un pedido como listo antes de que todos los productos involucrados hayan sido preparados. El frontend se desarrolló con Angular, Ionic y TypeScript, mientras que Supabase proporciona los servicios de backend y persistencia de datos. Mediante Capacitor, la aplicación se integra con Android y puede ejecutarse como una aplicación móvil nativa. El proyecto se desarrolló de manera colaborativa, utilizando Git y GitHub para organizar el trabajo, gestionar cambios e integrar las distintas funcionalidades",
+            "objetives": "Desarrollar una solución móvil que facilite la gestión de pedidos y productos de un restaurante, mejore la coordinación entre los sectores de atención y preparación, y permita realizar un seguimiento claro del estado de cada pedido.",
+            "architecture": [
+                "Angular y TypeScript para la estructura de la aplicación, la lógica de negocio del cliente y la organización de componentes.",
+                "Ionic para componentes de interfaz adaptados a dispositivos móviles.",
+                "Capacitor para generar y sincronizar el proyecto Android",
+                "Supabase y PostgreSQL para la persistencia de información y las operaciones sobre los datos.",
+                "Supabase Auth para la gestión de usuarios autenticados.",
+                "Guards de Angular y control de acceso basado en roles.",
+                "Angular Router, rutas dinámicas y carga diferida de componentes.",
+                "SCSS y Bootstrap para la presentación visual y la adaptación de interfaces.",
+                "Git y GitHub, con ramas de trabajo y solicitudes de integración de cambios.",
+                "Android Studio para compilar, ejecutar y probar la aplicación en Android."
+            ],
+            "features": [
+                "Gestión de productos: organización del menú por categorías, incluyendo platos, bebidas y postres.",
+                "Información del menú: presentación de nombres, descripciones, precios, tiempos de elaboración y fotografías.",
+                "Galería de imágenes: visualización horizontal de fotografías y ampliación de imágenes para consultar los detalles de cada producto.",
+                "Descripción ampliada: consulta del contenido completo de las descripciones extensas sin sobrecargar las tarjetas del menú.",
+                "Gestión de pedidos: visualización de pedidos y productos asociados, con seguimiento de sus estados.",
+                "Flujo de preparación: actualización individual del estado de los productos por parte de los sectores responsables.",
+                "Coordinación entre sectores: un pedido pasa al estado de listo cuando todos sus productos han sido preparados.",
+                "Control de acceso por roles: interfaces y rutas protegidas según los permisos correspondientes a cada perfil.",
+                "Experiencia de usuario móvil: interfaces adaptables, indicadores visuales y desplazamiento optimizado para consultar pedidos y productos.",
+                "Notificaciones de interacción: incorporación de sonidos de entrada y salida, y vibración ante errores relevantes.",
+                "Integración con Android: compilación y sincronización de la aplicación mediante Capacitor y Android Studio."
+            ],
+            "learnings": [
+                "Desarrollo de aplicaciones con Angular y TypeScript.",
+                "Organización de componentes, servicios y rutas en una aplicación modular.",
+                "Implementación de navegación protegida y autorización basada en roles.",
+                "Integración de una aplicación frontend con Supabase y PostgreSQL.",
+                "Gestión de datos relacionados y coordinación de estados entre diferentes entidades.",
+                "Desarrollo de interfaces móviles con Ionic, SCSS y Bootstrap.",
+                "Integración de funcionalidades nativas mediante Capacitor.",
+                "Compilación, sincronización y pruebas de aplicaciones Android.",
+                "Gestión de versiones y colaboración mediante Git y GitHub.",
+                "Optimización de consultas y análisis del consumo de recursos de backend.",
+                "Mejora de la experiencia de usuario mediante interacciones visuales, sonoras y hápticas."
+            ],
+            "challenges": [
+                "Coordinación del flujo de pedidos: implementar una lógica consistente para que los distintos sectores puedan actualizar sus productos sin adelantar el estado global del pedido.",
+                "Control de acceso: organizar las rutas y las interfaces para que cada perfil acceda únicamente a las funcionalidades correspondientes.",
+                "Uso eficiente de Supabase: investigar el incremento de los registros de consultas, identificar posibles fuentes de consumo excesivo y evaluar estrategias de caché e invalidación de datos.",
+                "Diseño adaptable: resolver problemas de distribución de contenido, fotografías con distintas proporciones y descripciones extensas en pantallas pequeñas.",
+                "Desplazamiento y navegación móvil: ajustar el scroll y el desplazamiento con ajuste automático (scroll snap) para mejorar la consulta de pedidos.",
+                "Integración con Android: mantener sincronizados los recursos compilados de Angular con el proyecto nativo mediante Capacitor.",
+                "Desarrollo colaborativo: integrar funcionalidades desarrolladas en ramas independientes, resolver conflictos y mantener una versión funcional del proyecto."
+            ],
+            "projectStatusResume": "El desarrollo del proyecto ha concluido y la aplicación fue promocionada. Se completó la implementación de las funcionalidades trabajadas durante el proyecto y su integración como aplicación móvil para Android. El proyecto queda como una experiencia práctica de desarrollo full stack orientado a aplicaciones móviles, integración con servicios backend y trabajo colaborativo."
+        },
         "project-types": {
             "personal": "Personal",
             "profesional": "Profesional",

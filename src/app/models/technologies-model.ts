@@ -153,7 +153,16 @@ export const TECHNOLOGIES: Record<string, Technology> = {
   bcrypt: {
     name: 'Bcrypt',
     image: 'images/technologies/bcrypt.webp'
+  },
+  ionic: {
+    name: 'Ionic',
+    image: 'images/technologies/ionic.webp'
+  },
+  capacitor: {
+    name: 'Capacitor',
+    image: 'images/technologies/capacitor.webp'
   }
+  
 } satisfies Record<string, Technology>;
 
 //----------------------------------------------------------------------------------
@@ -215,5 +224,10 @@ export const TECHNOLOGY_CATEGORIES = {
   security: [
    'bcrypt',
    'jwt',
+  ],
+  mobile: [
+    'ionic',
+    'capacitor'
   ]
+  
 } as const satisfies Record<string, TechnologyId[]>;

@@ -71,7 +71,7 @@ export const PROJECTS: Project[] = [
         learnings: [],
         projectStatusResume: ''
     },
-        {
+    {
         id: 3,
         slug: 'social-vortex',
         name: 'Social Vortex',
@@ -102,6 +102,51 @@ export const PROJECTS: Project[] = [
             'cloudinary',
             'jwt',
             'bcrypt',
+        ],
+
+        challenges: [],
+        architecture: [],
+        objetive: '',
+        github: '',
+        features: [],
+        learnings: [],
+        projectStatusResume: ''
+    },
+    {
+        id: 4,
+        slug: 'desarrollogourmet',
+        name: 'Desarrollo Gourmet',
+        type: 'academic',
+        status: 'finished',
+        banner: 'images/technologies/ionic.webp',
+        shortDescription: '',
+        description: '',
+        captures: [
+            'images/projects/desarrollogourmet/1.webp',
+            'images/projects/desarrollogourmet/2.webp',
+            'images/projects/desarrollogourmet/3.webp',
+            'images/projects/desarrollogourmet/4.webp',
+            'images/projects/desarrollogourmet/5.webp',
+            'images/projects/desarrollogourmet/6.webp',
+            'images/projects/desarrollogourmet/7.webp',
+            'images/projects/desarrollogourmet/8.webp',
+            'images/projects/desarrollogourmet/9.webp',
+            'images/projects/desarrollogourmet/10.webp',
+            'images/projects/desarrollogourmet/11.webp',
+            'images/projects/desarrollogourmet/12.webp',
+        ],
+        stack: [
+            'angular',
+            'typescript',
+            'css3',
+            'html5',
+            'supabase',
+            "nodejs",
+            'git',
+            'github',
+            'ionic',
+            'capacitor',
+            'emailjs'
         ],
 
         challenges: [],

@@ -154,6 +154,60 @@
             ],
             "projectStatusResume": "This project is retained for technical reference purposes. It has fulfilled its learning and development objectives, therefore no new functionalities or active maintenance are planned."
         },
+        "desarrollogourmet": {
+            "name": "Desarrollo Gourmet",
+            "shortDescription": "Mobile restaurant application",
+            "description": "Desarrollo Gourmet is a mobile application designed to centralize and optimize a restaurant's operational processes. The system supports multiple user roles and provides dedicated interfaces for customers, waiters, kitchen staff, bartenders, and management personnel. The application integrates menu and product management with an order workflow that enables order status tracking throughout the different preparation stages. Status updates account for the involvement of multiple departments, preventing an order from being marked as ready before all its items have been prepared. The frontend was developed using Angular, Ionic, and TypeScript, while Supabase provides backend services and data persistence. Through Capacitor, the application integrates with Android and can run as a native mobile application. The project was developed collaboratively, using Git and GitHub to organize development, manage changes, and integrate different features.",
+            "objetives": "To develop a mobile solution that simplifies restaurant order and product management, improves coordination between customer service and preparation departments, and enables clear tracking of each order's status.",
+            "architecture": [
+                "Frontend: Angular and TypeScript for application structure, client-side business logic, and component organization.",
+                "Mobile UI: Ionic for mobile-oriented interface components.",
+                "Native integration: Capacitor for generating and synchronizing the Android project.",
+                "Backend and database: Supabase and PostgreSQL for data persistence and database operations.",
+                "Authentication: Supabase Auth for authenticated user management.",
+                "Authorization: Angular route guards and role-based access control.",
+                "Navigation: Angular Router, dynamic routing, and lazy loading of components.",
+                "Styling: SCSS and Bootstrap for visual presentation and responsive interfaces.",
+                "Collaborative development: Git and GitHub, using development branches and pull requests to integrate changes.",
+                "Mobile development environment: Android Studio for building, running, and testing the application on Android."
+            ],
+            "features": [
+                "Menu organization by category, including dishes, beverages, and desserts.",
+                "Display of product names, descriptions, prices, preparation times, and photographs.",
+                "Horizontal photo browsing and image enlargement to inspect product details.",
+                "Full-text viewing for lengthy product descriptions without overcrowding menu cards.",
+                "Order and associated item displays, including status tracking.",
+                "Individual product status updates by the responsible departments.",
+                "An order is marked as ready only when all its items have been prepared.",
+                "Interfaces and protected routes according to the permissions assigned to each user role.",
+                "Responsive interfaces, visual indicators, and optimized scrolling for browsing orders and products.",
+                "Entry and exit sounds, along with vibration feedback for relevant errors.",
+                "Application building and synchronization through Capacitor and Android Studio."
+            ],
+            "learnings": [
+                "Application development with Angular and TypeScript.",
+                "Component, service, and route organization in a modular application.",
+                "Implementation of protected navigation and role-based authorization.",
+                "Frontend integration with Supabase and PostgreSQL.",
+                "Management of related data and coordination of states across different entities.",
+                "Mobile interface development using Ionic, SCSS, and Bootstrap.",
+                "Integration of native functionality through Capacitor.",
+                "Building, synchronizing, and testing Android applications.",
+                "Version control and collaborative development with Git and GitHub.",
+                "Query optimization and analysis of backend resource consumption.",
+                "User experience improvements through visual, audio, and haptic feedback."
+            ],
+            "challenges": [
+                "Order workflow coordination: Implementing consistent logic that allows different departments to update individual items without prematurely advancing the overall order status.",
+                "Access control: Organizing routes and interfaces so that each user role can access only its authorized functionality.",
+                "Efficient Supabase usage: Investigating increased query log volume, identifying potential sources of excessive consumption, and evaluating caching and data invalidation strategies.",
+                "Responsive design: Addressing content layout, images with different aspect ratios, and lengthy descriptions on small screens.",
+                "Mobile scrolling and navigation: Fine-tuning scrolling behavior and scroll snapping to improve order browsing.",
+                "Android integration: Keeping Angular's compiled assets synchronized with the native project through Capacitor.",
+                "Collaborative development: Integrating features developed in separate branches, resolving conflicts, and maintaining a functional version of the project."
+            ],
+            "projectStatusResume": "Project development has been completed, and the application has been promoted. The features developed throughout the project were implemented and integrated into the Android mobile application. The project serves as practical experience in full-stack-oriented mobile application development, backend service integration, and collaborative software development."
+        },
         "project-types": {
             "personal": "Personal",
             "profesional": "Profesional",
